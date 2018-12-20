@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TicketSystem.CommonComponents.DataConverters.Realization.DS;
+using TicketSystem.CommonComponents.InitialyzerComponent;
+using TicketSystem.CommonComponents.WorkWithDataBase.SqlLite;
 using TicketSystem.CommonComponents.WorkWithFiles.Save;
 
 namespace TicketSystem
@@ -17,15 +20,28 @@ namespace TicketSystem
         public Form1()
         {
             InitializeComponent();
+            ConfigReader.getInstance().read();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        //
+        //Functions
+        //
+
+
+        
+        private void createquerys()
         {
             TextFilesDataSaver ds = new TextFilesDataSaver();
             List<string> data = new List<string>();
             int obj = 149;
             int firstLvl1 = 10;
-            for(int Lvl1=0; Lvl1<3; Lvl1++)
+            for (int Lvl1 = 0; Lvl1 < 3; Lvl1++)
             {
                 int firstLvl2 = 22;
                 for (int Lvl2 = 0; Lvl2 < 3; Lvl2++)
@@ -39,8 +55,8 @@ namespace TicketSystem
                             int firstCurrent = 34;
                             for (int currentLvl = 0; currentLvl < 3; currentLvl++)
                             {
-                                data.Add("Insert into Objects values(null, 'Probability');/*"+ obj + "*/");
-                                data.Add("Insert into Objects_references values(" + obj + ", "+firstCurrent+", 4);");
+                                data.Add("Insert into Objects values(null, 'Probability');/*" + obj + "*/");
+                                data.Add("Insert into Objects_references values(" + obj + ", " + firstCurrent + ", 4);");
                                 data.Add("Insert into Objects_references values(" + obj + ", " + firstLvl1 + ", 5);");
                                 data.Add("Insert into Objects_references values(" + obj + ", " + firstLvl2 + ", 5);");
                                 data.Add("Insert into Objects_references values(" + obj + ", " + firstLvl3 + ", 5);");
@@ -61,9 +77,16 @@ namespace TicketSystem
             }
             //data.Add("Hello world");
             TextFilesConfigFieldsOnSave conf = new TextFilesConfigFieldsOnSave(
-                data,Directory.GetCurrentDirectory()+"\\test.txt",1);
+                data, Directory.GetCurrentDirectory() + "\\test.txt", 1);
             ds.setConfig(conf);
             ds.execute();
+        }
+
+        private void checkDB()
+        {
+            string[] buf =
+                DataSetConverter.fromDsToBuf.toStringBuf.
+                convert(SqlLiteSimpleExecute.execute("Select name from objects"));
         }
     }
 }

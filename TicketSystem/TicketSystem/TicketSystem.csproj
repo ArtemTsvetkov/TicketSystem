@@ -69,7 +69,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonComponents\DataConverters\Exceptions\СonversionError.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\DS\DataSetConverter.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\DS\SubTypes\FromDsToBuf.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\DS\SubTypes\FromDsToSingle.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\Workers\FromDataSetToIntDataConverter.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\Workers\FromDataSetToString.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\Workers\FromDsToIntBufConverter.cs" />
+    <Compile Include="CommonComponents\DataConverters\Realization\Workers\FromDsToStringBufConverter.cs" />
+    <Compile Include="CommonComponents\InitialyzerComponent\ConfigReader.cs" />
+    <Compile Include="CommonComponents\Interfaces\DataConverter.cs" />
     <Compile Include="CommonComponents\Interfaces\DataWorker.cs" />
+    <Compile Include="CommonComponents\PopupWindow\InformationPopupWindow.cs" />
+    <Compile Include="CommonComponents\PopupWindow\InformationPopupWindowConfig.cs" />
+    <Compile Include="CommonComponents\PopupWindow\SimplePopupWindow.cs" />
+    <Compile Include="CommonComponents\WorkWithDataBase\Exceptions\DatabaseQueryError.cs" />
+    <Compile Include="CommonComponents\WorkWithDataBase\Exceptions\NoDataBaseConnection.cs" />
+    <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteDataWorker.cs" />
+    <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteSimpleExecute.cs" />
+    <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteStateFields.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\ReadWriteTextFile.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\Save\TextFilesConfigFieldsOnSave.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\Save\TextFilesDataSaver.cs" />
