@@ -55,6 +55,11 @@ namespace TicketSystem.TSystem.Objects
             return name;
         }
 
+        public int getId()
+        {
+            return id;
+        }
+
         private void load()
         {
             name = DataSetConverter.fromDsToSingle.toString.convert(

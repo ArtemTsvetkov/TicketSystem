@@ -48,5 +48,22 @@ namespace TicketSystem.TSystem
             return "select value from parameters where attr_id=6 and object_id="+
                 probabilityId;
         }
+
+        public static string getAllConnectsIds()
+        {
+            return "select id from objects where name='Connect'";
+        }
+
+        public static string getConnectFromId(int connectId)
+        {
+            return "select reference from Objects_references where attr_id=2 and object_id="+
+                connectId;
+        }
+
+        public static string getConnectToId(int connectId)
+        {
+            return "select reference from Objects_references where attr_id=3 and object_id=" +
+                connectId;
+        }
     }
 }

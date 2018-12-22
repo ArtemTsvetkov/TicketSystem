@@ -103,9 +103,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TSystem\Exceptions\ParentNodeMustBeCalcFirst.cs" />
     <Compile Include="TSystem\Model.cs" />
+    <Compile Include="TSystem\Objects\Connect.cs" />
+    <Compile Include="TSystem\Objects\Connector.cs" />
     <Compile Include="TSystem\Objects\Node.cs" />
     <Compile Include="TSystem\Objects\NodeItem.cs" />
     <Compile Include="TSystem\Objects\Probability.cs" />
+    <Compile Include="TSystem\Objects\Types\Connector\Concrete\Empty.cs" />
+    <Compile Include="TSystem\Objects\Types\Connector\Concrete\HaveUpdate.cs" />
+    <Compile Include="TSystem\Objects\Types\Connector\Concrete\NeedUpdate.cs" />
+    <Compile Include="TSystem\Objects\Types\Connector\ConnectorStatus.cs" />
+    <Compile Include="TSystem\Objects\Types\Connector\ConnectorStatusFabric.cs" />
     <Compile Include="TSystem\QueryConfigurator.cs" />
     <Compile Include="TSystem\Workers\NodeIdsStore.cs" />
     <EmbeddedResource Include="Form1.resx">

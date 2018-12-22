@@ -9,6 +9,7 @@ using TicketSystem.CommonComponents.WorkWithDataBase.SqlLite;
 using TicketSystem.CommonComponents.WorkWithFiles.Save;
 using TicketSystem.TSystem.Exceptions;
 using TicketSystem.TSystem.Objects;
+using TicketSystem.TSystem.Objects.Types.Connector;
 using TicketSystem.TSystem.Workers;
 
 namespace TicketSystem.TSystem
@@ -16,6 +17,7 @@ namespace TicketSystem.TSystem
     class Model
     {
         private Node[] nodes;
+        private Connect[] connects;
         private List<Probability> probabilitys;
 
         public Model()
@@ -26,6 +28,11 @@ namespace TicketSystem.TSystem
         public Node[] getNodes()
         {
             return nodes;
+        }
+
+        public Connect[] getConnects()
+        {
+            return connects;
         }
 
         public void calcNodesItemsValues()
@@ -65,6 +72,239 @@ namespace TicketSystem.TSystem
             }
         }
 
+        public void updateNodes()
+        {
+            setStatusToAllLists();
+
+            bool allNodesSetRightStatus = false;
+            while (!allNodesSetRightStatus)
+            {
+                for(int i=0; i<nodes.Length; i++)
+                {
+                    if(isNodeListNeedUpdate(i))
+                    {
+
+                    }
+                }
+            }
+            fixImpactConnectHaveTwoEmptyStatusAndConnectedNodesHaveOnlyOneEmptyStatus();
+        }
+
+        private void fixImpactConnectHaveTwoEmptyStatusAndConnectedNodesHaveOnlyOneEmptyStatus()
+        {
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if(connects[i].getFrom().Status.getStatus().
+                    Equals(ConnectorStatusFabric.empty.getStatus()) &
+                    connects[i].getTo().Status.getStatus().
+                    Equals(ConnectorStatusFabric.empty.getStatus()))
+                {
+                    connects[i].getFrom().Status = ConnectorStatusFabric.needUpdate;
+                }
+            }
+        }
+
+        private void setStatusToAllLists()
+        {
+            for (int i = 0; i < nodes.Length; i++)
+            {
+                if (isNodeIsList(i) & !isNodeListHaveUpdate(i))
+                {
+                    setStatusNeedUpdateToAllReferences(i);
+                }
+            }
+        }
+
+        private void setStatusNeedUpdateToAllReferences(int referencefromIndex)
+        {
+            int nodeId = nodes[referencefromIndex].getId();
+
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId)
+                {
+                    if(!connects[i].getTo().Status.getStatus().
+                        Equals(ConnectorStatusFabric.haveUpdate.getStatus()))
+                    {
+                        connects[i].getTo().Status = ConnectorStatusFabric.needUpdate;
+                    }
+                }
+                if (connects[i].getTo().getId() == nodeId)
+                {
+                    if (!connects[i].getFrom().Status.getStatus().
+                        Equals(ConnectorStatusFabric.haveUpdate.getStatus()))
+                    {
+                        connects[i].getFrom().Status = ConnectorStatusFabric.needUpdate;
+                    }
+                }
+            }
+        }
+
+        private void setNeedUpdateStatusOnOnlyOneEmptyConnector(int referencefromIndex)
+        {
+            int nodeId = nodes[referencefromIndex].getId();
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId &
+                        connects[i].getFrom().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                {
+                    if (connects[i].getTo().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                    {
+                        connects[i].getTo().Status = ConnectorStatusFabric.needUpdate;
+                    }
+                }
+                if (connects[i].getTo().getId() == nodeId &
+                        connects[i].getTo().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                {
+                    if (connects[i].getFrom().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                    {
+                        connects[i].getFrom().Status = ConnectorStatusFabric.needUpdate;
+                    }
+                }
+            }
+        }
+
+        private bool isNodeHaveOnlyOneEmptyStateAndRestsHaveStatusNeedUpdate(int nodeIndex)
+        {
+            int nodeId = nodes[nodeIndex].getId();
+            int countOfEmptyState = 0;
+            int countOfNeedUpdateState = 0;
+            int countOfAllState = 0;
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId)
+                {
+                    countOfAllState++;
+                    if (connects[i].getFrom().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                    {
+                        countOfEmptyState++;
+                    }
+                    if (connects[i].getFrom().Status.getStatus().
+                        Equals(ConnectorStatusFabric.needUpdate.getStatus()))
+                    {
+                        countOfNeedUpdateState++;
+                    }
+                }
+                if (connects[i].getTo().getId() == nodeId)
+                {
+                    countOfAllState++;
+                    if (connects[i].getTo().Status.getStatus().
+                        Equals(ConnectorStatusFabric.empty.getStatus()))
+                    {
+                        countOfEmptyState++;
+                    }
+                    if (connects[i].getTo().Status.getStatus().
+                        Equals(ConnectorStatusFabric.needUpdate.getStatus()))
+                    {
+                        countOfNeedUpdateState++;
+                    }
+                }
+            }
+            if (countOfAllState == countOfNeedUpdateState + countOfEmptyState)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool isNodeIsList(int nodeIndex)
+        {
+            int nodeId = nodes[nodeIndex].getId();
+            bool nodeHaveParent = false;
+            bool nodeHaveChild = false;
+            for (int i=0; i<connects.Length; i++)
+            {
+                if(connects[i].getFrom().getId() == nodeId)
+                {
+                    nodeHaveChild = true;
+                }
+                if (connects[i].getTo().getId() == nodeId)
+                {
+                    nodeHaveParent = true;
+                }
+                if(nodeHaveChild & nodeHaveParent)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private bool isNodeListHaveUpdate(int nodeIndex)
+        {
+            int nodeId = nodes[nodeIndex].getId();
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId &
+                    connects[i].getFrom().Status.getStatus().
+                    Equals(ConnectorStatusFabric.haveUpdate.getStatus()))
+                {
+                    return true;
+                }
+                if (connects[i].getTo().getId() == nodeId &
+                    connects[i].getTo().Status.getStatus().
+                    Equals(ConnectorStatusFabric.haveUpdate.getStatus()))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private bool isNodeListNeedUpdate(int nodeIndex)
+        {
+            int nodeId = nodes[nodeIndex].getId();
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId &
+                    connects[i].getFrom().Status.getStatus().
+                    Equals(ConnectorStatusFabric.needUpdate.getStatus()))
+                {
+                    return true;
+                }
+                if (connects[i].getTo().getId() == nodeId &
+                    connects[i].getTo().Status.getStatus().
+                    Equals(ConnectorStatusFabric.needUpdate.getStatus()))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private bool isNodeHaveStatusOnAllConnectors(int nodeIndex)
+        {
+            int nodeId = nodes[nodeIndex].getId();
+            for (int i = 0; i < connects.Length; i++)
+            {
+                if (connects[i].getFrom().getId() == nodeId &
+                    connects[i].getFrom().Status.getStatus().
+                    Equals(ConnectorStatusFabric.empty.getStatus()))
+                {
+                    return false;
+                }
+                if (connects[i].getTo().getId() == nodeId &
+                    connects[i].getTo().Status.getStatus().
+                    Equals(ConnectorStatusFabric.empty.getStatus()))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         private void load()
         {
             int[] nodeIds = NodeIdsStore.getNodeIds();
@@ -82,6 +322,15 @@ namespace TicketSystem.TSystem
                 {
                     probabilitys.Add(new Probability(nodeProbabilitysId[m]));
                 }
+            }
+
+            int[] connectIds = DataSetConverter.fromDsToBuf.toIntBuf.convert(
+                SqlLiteSimpleExecute.execute(QueryConfigurator.getAllConnectsIds()));
+
+            connects = new Connect[connectIds.Length];
+            for (int i = 0; i < connectIds.Length; i++)
+            {
+                connects[i] = new Connect(connectIds[i]);
             }
         }
 

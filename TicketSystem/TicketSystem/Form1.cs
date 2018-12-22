@@ -15,6 +15,7 @@ using TicketSystem.CommonComponents.WorkWithFiles.Load;
 using TicketSystem.CommonComponents.WorkWithFiles.Save;
 using TicketSystem.TSystem;
 using TicketSystem.TSystem.Objects;
+using TicketSystem.TSystem.Objects.Types.Connector;
 
 namespace TicketSystem
 {
@@ -28,7 +29,48 @@ namespace TicketSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            testcalc();
+            Model model = new Model();
+            testcalc(model);
+            int zp = 0;
+            int tasks = 0;
+            for(int i=0; i<model.getNodes().Length; i++)
+            {
+                if(model.getNodes()[i].getName().Equals("Salary"))
+                {
+                    zp = i;
+                }
+                if (model.getNodes()[i].getName().Equals("Degree of workload tasks"))
+                {
+                    tasks = i;
+                }
+            }
+            model.getNodes()[zp].Items[0].Value = 0;
+            model.getNodes()[zp].Items[1].Value = 100;
+            model.getNodes()[zp].Items[2].Value = 0;
+            model.getNodes()[tasks].Items[0].Value = 0;
+            model.getNodes()[tasks].Items[1].Value = 100;
+            model.getNodes()[tasks].Items[2].Value = 0;
+
+            for (int i = 0; i < model.getConnects().Length; i++)
+            {
+                if(model.getConnects()[i].getFrom().getId()==model.getNodes()[zp].getId())
+                {
+                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
+                }
+                if (model.getConnects()[i].getTo().getId() == model.getNodes()[zp].getId())
+                {
+                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
+                }
+                if (model.getConnects()[i].getFrom().getId() == model.getNodes()[tasks].getId())
+                {
+                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
+                }
+                if (model.getConnects()[i].getTo().getId() == model.getNodes()[tasks].getId())
+                {
+                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
+                }
+            }
+            model.updateNodes();
         }
 
 
@@ -66,9 +108,8 @@ namespace TicketSystem
             ds.execute();
         }
         
-        private void testcalc()
+        private void testcalc(Model model)
         {
-            Model model = new Model();
             model.calcNodesItemsValues();
             TextFilesDataSaver ds = new TextFilesDataSaver();
             List<string> data = new List<string>();
