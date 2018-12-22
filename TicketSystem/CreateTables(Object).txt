@@ -146,13 +146,13 @@ Insert into Objects_references values(50,33,3);
 /*Salary*/
 Insert into Objects values(null, 'Probability');/*51*/
 Insert into Objects_references values(51,38,4);
-Insert into Parameters values(51,6,'0.2');
+Insert into Parameters values(51,6,'0.5');
 Insert into Objects values(null, 'Probability');/*52*/
 Insert into Objects_references values(52,39,4);
-Insert into Parameters values(52,6,'0.5');
+Insert into Parameters values(52,6,'0.3');
 Insert into Objects values(null, 'Probability');/*53*/
 Insert into Objects_references values(53,40,4);
-Insert into Parameters values(53,6,'0.3');
+Insert into Parameters values(53,6,'0.2');
 /*LevelLoadTasks*/
 Insert into Objects values(null, 'Probability');/*54*/
 Insert into Objects_references values(54,2,4);
@@ -220,2233 +220,2233 @@ Insert into Objects_references values(71,14,5);
 Insert into Objects_references values(71,2,5);
 Insert into Parameters values(71,6,'0.1');
 
-Insert into Objects values(null, 'Probability');/*71*/
-Insert into Objects_references values(71,18,4);
-Insert into Objects_references values(71,14,5);
-Insert into Objects_references values(71,3,5);
-Insert into Parameters values(71,6,'0.7');
 Insert into Objects values(null, 'Probability');/*72*/
-Insert into Objects_references values(72,19,4);
+Insert into Objects_references values(72,18,4);
 Insert into Objects_references values(72,14,5);
 Insert into Objects_references values(72,3,5);
-Insert into Parameters values(72,6,'0.2');
+Insert into Parameters values(72,6,'0.7');
 Insert into Objects values(null, 'Probability');/*73*/
-Insert into Objects_references values(73,20,4);
+Insert into Objects_references values(73,19,4);
 Insert into Objects_references values(73,14,5);
 Insert into Objects_references values(73,3,5);
-Insert into Parameters values(73,6,'0.1');
-
+Insert into Parameters values(73,6,'0.2');
 Insert into Objects values(null, 'Probability');/*74*/
-Insert into Objects_references values(74,18,4);
+Insert into Objects_references values(74,20,4);
 Insert into Objects_references values(74,14,5);
-Insert into Objects_references values(74,4,5);
-Insert into Parameters values(74,6,'0.6');
+Insert into Objects_references values(74,3,5);
+Insert into Parameters values(74,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*75*/
-Insert into Objects_references values(75,19,4);
+Insert into Objects_references values(75,18,4);
 Insert into Objects_references values(75,14,5);
 Insert into Objects_references values(75,4,5);
-Insert into Parameters values(75,6,'0.2');
+Insert into Parameters values(75,6,'0.6');
 Insert into Objects values(null, 'Probability');/*76*/
-Insert into Objects_references values(76,20,4);
+Insert into Objects_references values(76,19,4);
 Insert into Objects_references values(76,14,5);
 Insert into Objects_references values(76,4,5);
 Insert into Parameters values(76,6,'0.2');
-
-
 Insert into Objects values(null, 'Probability');/*77*/
-Insert into Objects_references values(77,18,4);
-Insert into Objects_references values(77,15,5);
-Insert into Objects_references values(77,2,5);
-Insert into Parameters values(77,6,'0.7');
+Insert into Objects_references values(77,20,4);
+Insert into Objects_references values(77,14,5);
+Insert into Objects_references values(77,4,5);
+Insert into Parameters values(77,6,'0.2');
+
+
 Insert into Objects values(null, 'Probability');/*78*/
-Insert into Objects_references values(78,19,4);
+Insert into Objects_references values(78,18,4);
 Insert into Objects_references values(78,15,5);
 Insert into Objects_references values(78,2,5);
-Insert into Parameters values(78,6,'0.2');
+Insert into Parameters values(78,6,'0.7');
 Insert into Objects values(null, 'Probability');/*79*/
-Insert into Objects_references values(79,20,4);
+Insert into Objects_references values(79,19,4);
 Insert into Objects_references values(79,15,5);
 Insert into Objects_references values(79,2,5);
-Insert into Parameters values(79,6,'0.1');
-
+Insert into Parameters values(79,6,'0.2');
 Insert into Objects values(null, 'Probability');/*80*/
-Insert into Objects_references values(80,18,4);
+Insert into Objects_references values(80,20,4);
 Insert into Objects_references values(80,15,5);
-Insert into Objects_references values(80,3,5);
-Insert into Parameters values(80,6,'0.3');
+Insert into Objects_references values(80,2,5);
+Insert into Parameters values(80,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*81*/
-Insert into Objects_references values(81,19,4);
+Insert into Objects_references values(81,18,4);
 Insert into Objects_references values(81,15,5);
 Insert into Objects_references values(81,3,5);
-Insert into Parameters values(81,6,'0.4');
+Insert into Parameters values(81,6,'0.3');
 Insert into Objects values(null, 'Probability');/*82*/
-Insert into Objects_references values(82,20,4);
+Insert into Objects_references values(82,19,4);
 Insert into Objects_references values(82,15,5);
 Insert into Objects_references values(82,3,5);
-Insert into Parameters values(82,6,'0.3');
-
+Insert into Parameters values(82,6,'0.4');
 Insert into Objects values(null, 'Probability');/*83*/
-Insert into Objects_references values(83,18,4);
+Insert into Objects_references values(83,20,4);
 Insert into Objects_references values(83,15,5);
-Insert into Objects_references values(83,4,5);
+Insert into Objects_references values(83,3,5);
 Insert into Parameters values(83,6,'0.3');
+
 Insert into Objects values(null, 'Probability');/*84*/
-Insert into Objects_references values(84,19,4);
+Insert into Objects_references values(84,18,4);
 Insert into Objects_references values(84,15,5);
 Insert into Objects_references values(84,4,5);
 Insert into Parameters values(84,6,'0.3');
 Insert into Objects values(null, 'Probability');/*85*/
-Insert into Objects_references values(85,20,4);
+Insert into Objects_references values(85,19,4);
 Insert into Objects_references values(85,15,5);
 Insert into Objects_references values(85,4,5);
-Insert into Parameters values(85,6,'0.4');
-
-
+Insert into Parameters values(85,6,'0.3');
 Insert into Objects values(null, 'Probability');/*86*/
-Insert into Objects_references values(86,18,4);
-Insert into Objects_references values(86,16,5);
-Insert into Objects_references values(86,2,5);
-Insert into Parameters values(86,6,'0.6');
+Insert into Objects_references values(86,20,4);
+Insert into Objects_references values(86,15,5);
+Insert into Objects_references values(86,4,5);
+Insert into Parameters values(86,6,'0.4');
+
+
 Insert into Objects values(null, 'Probability');/*87*/
-Insert into Objects_references values(87,19,4);
+Insert into Objects_references values(87,18,4);
 Insert into Objects_references values(87,16,5);
 Insert into Objects_references values(87,2,5);
-Insert into Parameters values(87,6,'0.2');
+Insert into Parameters values(87,6,'0.6');
 Insert into Objects values(null, 'Probability');/*88*/
-Insert into Objects_references values(88,20,4);
+Insert into Objects_references values(88,19,4);
 Insert into Objects_references values(88,16,5);
 Insert into Objects_references values(88,2,5);
 Insert into Parameters values(88,6,'0.2');
-
 Insert into Objects values(null, 'Probability');/*89*/
-Insert into Objects_references values(89,18,4);
+Insert into Objects_references values(89,20,4);
 Insert into Objects_references values(89,16,5);
-Insert into Objects_references values(89,3,5);
-Insert into Parameters values(89,6,'0.3');
+Insert into Objects_references values(89,2,5);
+Insert into Parameters values(89,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*90*/
-Insert into Objects_references values(90,19,4);
+Insert into Objects_references values(90,18,4);
 Insert into Objects_references values(90,16,5);
 Insert into Objects_references values(90,3,5);
 Insert into Parameters values(90,6,'0.3');
 Insert into Objects values(null, 'Probability');/*91*/
-Insert into Objects_references values(91,20,4);
+Insert into Objects_references values(91,19,4);
 Insert into Objects_references values(91,16,5);
 Insert into Objects_references values(91,3,5);
-Insert into Parameters values(91,6,'0.4');
-
+Insert into Parameters values(91,6,'0.3');
 Insert into Objects values(null, 'Probability');/*92*/
-Insert into Objects_references values(92,18,4);
+Insert into Objects_references values(92,20,4);
 Insert into Objects_references values(92,16,5);
-Insert into Objects_references values(92,4,5);
-Insert into Parameters values(92,6,'0.1');
+Insert into Objects_references values(92,3,5);
+Insert into Parameters values(92,6,'0.4');
+
 Insert into Objects values(null, 'Probability');/*93*/
-Insert into Objects_references values(93,19,4);
+Insert into Objects_references values(93,18,4);
 Insert into Objects_references values(93,16,5);
 Insert into Objects_references values(93,4,5);
 Insert into Parameters values(93,6,'0.1');
 Insert into Objects values(null, 'Probability');/*94*/
-Insert into Objects_references values(94,20,4);
+Insert into Objects_references values(94,19,4);
 Insert into Objects_references values(94,16,5);
 Insert into Objects_references values(94,4,5);
-Insert into Parameters values(94,6,'0.8');
-/*Wants*/
+Insert into Parameters values(94,6,'0.1');
 Insert into Objects values(null, 'Probability');/*95*/
-Insert into Objects_references values(95,30,4);
-Insert into Objects_references values(95,18,5);
-Insert into Objects_references values(95,38,5);
-Insert into Parameters values(95,6,'0.5');
+Insert into Objects_references values(95,20,4);
+Insert into Objects_references values(95,16,5);
+Insert into Objects_references values(95,4,5);
+Insert into Parameters values(95,6,'0.8');
+/*Wants*/
 Insert into Objects values(null, 'Probability');/*96*/
-Insert into Objects_references values(96,31,4);
+Insert into Objects_references values(96,30,4);
 Insert into Objects_references values(96,18,5);
 Insert into Objects_references values(96,38,5);
-Insert into Parameters values(96,6,'0.3');
+Insert into Parameters values(96,6,'0.5');
 Insert into Objects values(null, 'Probability');/*97*/
-Insert into Objects_references values(97,32,4);
+Insert into Objects_references values(97,31,4);
 Insert into Objects_references values(97,18,5);
 Insert into Objects_references values(97,38,5);
-Insert into Parameters values(97,6,'0.2');
-
+Insert into Parameters values(97,6,'0.3');
 Insert into Objects values(null, 'Probability');/*98*/
-Insert into Objects_references values(98,30,4);
+Insert into Objects_references values(98,32,4);
 Insert into Objects_references values(98,18,5);
-Insert into Objects_references values(98,39,5);
-Insert into Parameters values(98,6,'0.4');
+Insert into Objects_references values(98,38,5);
+Insert into Parameters values(98,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*99*/
-Insert into Objects_references values(99,31,4);
+Insert into Objects_references values(99,30,4);
 Insert into Objects_references values(99,18,5);
 Insert into Objects_references values(99,39,5);
 Insert into Parameters values(99,6,'0.4');
 Insert into Objects values(null, 'Probability');/*100*/
-Insert into Objects_references values(100,32,4);
+Insert into Objects_references values(100,31,4);
 Insert into Objects_references values(100,18,5);
 Insert into Objects_references values(100,39,5);
-Insert into Parameters values(100,6,'0.2');
-
+Insert into Parameters values(100,6,'0.4');
 Insert into Objects values(null, 'Probability');/*101*/
-Insert into Objects_references values(101,30,4);
+Insert into Objects_references values(101,32,4);
 Insert into Objects_references values(101,18,5);
-Insert into Objects_references values(101,40,5);
-Insert into Parameters values(101,6,'0.3');
+Insert into Objects_references values(101,39,5);
+Insert into Parameters values(101,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*102*/
-Insert into Objects_references values(102,31,4);
+Insert into Objects_references values(102,30,4);
 Insert into Objects_references values(102,18,5);
 Insert into Objects_references values(102,40,5);
-Insert into Parameters values(102,6,'0.4');
+Insert into Parameters values(102,6,'0.3');
 Insert into Objects values(null, 'Probability');/*103*/
-Insert into Objects_references values(103,32,4);
+Insert into Objects_references values(103,31,4);
 Insert into Objects_references values(103,18,5);
 Insert into Objects_references values(103,40,5);
-Insert into Parameters values(103,6,'0.5');
-
-
+Insert into Parameters values(103,6,'0.4');
 Insert into Objects values(null, 'Probability');/*104*/
-Insert into Objects_references values(104,30,4);
-Insert into Objects_references values(104,19,5);
-Insert into Objects_references values(104,38,5);
-Insert into Parameters values(104,6,'0.6');
+Insert into Objects_references values(104,32,4);
+Insert into Objects_references values(104,18,5);
+Insert into Objects_references values(104,40,5);
+Insert into Parameters values(104,6,'0.3');
+
+
 Insert into Objects values(null, 'Probability');/*105*/
-Insert into Objects_references values(105,31,4);
+Insert into Objects_references values(105,30,4);
 Insert into Objects_references values(105,19,5);
 Insert into Objects_references values(105,38,5);
-Insert into Parameters values(105,6,'0.3');
+Insert into Parameters values(105,6,'0.6');
 Insert into Objects values(null, 'Probability');/*106*/
-Insert into Objects_references values(106,32,4);
+Insert into Objects_references values(106,31,4);
 Insert into Objects_references values(106,19,5);
 Insert into Objects_references values(106,38,5);
-Insert into Parameters values(106,6,'0.1');
-
+Insert into Parameters values(106,6,'0.3');
 Insert into Objects values(null, 'Probability');/*107*/
-Insert into Objects_references values(107,30,4);
+Insert into Objects_references values(107,32,4);
 Insert into Objects_references values(107,19,5);
-Insert into Objects_references values(107,39,5);
-Insert into Parameters values(107,6,'0.5');
+Insert into Objects_references values(107,38,5);
+Insert into Parameters values(107,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*108*/
-Insert into Objects_references values(108,32,4);
+Insert into Objects_references values(108,30,4);
 Insert into Objects_references values(108,19,5);
 Insert into Objects_references values(108,39,5);
-Insert into Parameters values(108,6,'0.3');
+Insert into Parameters values(108,6,'0.5');
 Insert into Objects values(null, 'Probability');/*109*/
-Insert into Objects_references values(109,20,4);
+Insert into Objects_references values(109,31,4);
 Insert into Objects_references values(109,19,5);
 Insert into Objects_references values(109,39,5);
-Insert into Parameters values(109,6,'0.2');
-
+Insert into Parameters values(109,6,'0.3');
 Insert into Objects values(null, 'Probability');/*110*/
-Insert into Objects_references values(110,30,4);
+Insert into Objects_references values(110,32,4);
 Insert into Objects_references values(110,19,5);
-Insert into Objects_references values(110,40,5);
-Insert into Parameters values(110,6,'0.4');
+Insert into Objects_references values(110,39,5);
+Insert into Parameters values(110,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*111*/
-Insert into Objects_references values(111,31,4);
+Insert into Objects_references values(111,30,4);
 Insert into Objects_references values(111,19,5);
 Insert into Objects_references values(111,40,5);
 Insert into Parameters values(111,6,'0.4');
 Insert into Objects values(null, 'Probability');/*112*/
-Insert into Objects_references values(112,32,4);
+Insert into Objects_references values(112,31,4);
 Insert into Objects_references values(112,19,5);
 Insert into Objects_references values(112,40,5);
-Insert into Parameters values(112,6,'0.2');
-
-
+Insert into Parameters values(112,6,'0.4');
 Insert into Objects values(null, 'Probability');/*113*/
-Insert into Objects_references values(113,30,4);
-Insert into Objects_references values(113,20,5);
-Insert into Objects_references values(113,38,5);
-Insert into Parameters values(113,6,'0.7');
+Insert into Objects_references values(113,32,4);
+Insert into Objects_references values(113,19,5);
+Insert into Objects_references values(113,40,5);
+Insert into Parameters values(113,6,'0.2');
+
+
 Insert into Objects values(null, 'Probability');/*114*/
-Insert into Objects_references values(114,31,4);
+Insert into Objects_references values(114,30,4);
 Insert into Objects_references values(114,20,5);
 Insert into Objects_references values(114,38,5);
-Insert into Parameters values(114,6,'0.2');
+Insert into Parameters values(114,6,'0.7');
 Insert into Objects values(null, 'Probability');/*115*/
-Insert into Objects_references values(115,32,4);
+Insert into Objects_references values(115,31,4);
 Insert into Objects_references values(115,20,5);
 Insert into Objects_references values(115,38,5);
-Insert into Parameters values(115,6,'0.1');
-
+Insert into Parameters values(115,6,'0.2');
 Insert into Objects values(null, 'Probability');/*116*/
-Insert into Objects_references values(116,30,4);
+Insert into Objects_references values(116,32,4);
 Insert into Objects_references values(116,20,5);
-Insert into Objects_references values(116,39,5);
-Insert into Parameters values(116,6,'0.6');
+Insert into Objects_references values(116,38,5);
+Insert into Parameters values(116,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*117*/
-Insert into Objects_references values(117,31,4);
+Insert into Objects_references values(117,30,4);
 Insert into Objects_references values(117,20,5);
 Insert into Objects_references values(117,39,5);
-Insert into Parameters values(117,6,'0.3');
+Insert into Parameters values(117,6,'0.6');
 Insert into Objects values(null, 'Probability');/*118*/
-Insert into Objects_references values(118,32,4);
+Insert into Objects_references values(118,31,4);
 Insert into Objects_references values(118,20,5);
 Insert into Objects_references values(118,39,5);
-Insert into Parameters values(118,6,'0.1');
-
+Insert into Parameters values(118,6,'0.3');
 Insert into Objects values(null, 'Probability');/*119*/
-Insert into Objects_references values(119,30,4);
+Insert into Objects_references values(119,32,4);
 Insert into Objects_references values(119,20,5);
-Insert into Objects_references values(119,40,5);
-Insert into Parameters values(119,6,'0.5');
+Insert into Objects_references values(119,39,5);
+Insert into Parameters values(119,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*120*/
-Insert into Objects_references values(120,31,4);
+Insert into Objects_references values(120,30,4);
 Insert into Objects_references values(120,20,5);
 Insert into Objects_references values(120,40,5);
-Insert into Parameters values(120,6,'0.3');
+Insert into Parameters values(120,6,'0.5');
 Insert into Objects values(null, 'Probability');/*121*/
-Insert into Objects_references values(121,32,4);
+Insert into Objects_references values(121,31,4);
 Insert into Objects_references values(121,20,5);
 Insert into Objects_references values(121,40,5);
-Insert into Parameters values(121,6,'0.2');
+Insert into Parameters values(121,6,'0.3');
+Insert into Objects values(null, 'Probability');/*122*/
+Insert into Objects_references values(122,32,4);
+Insert into Objects_references values(122,20,5);
+Insert into Objects_references values(122,40,5);
+Insert into Parameters values(122,6,'0.2');
 
 /*SolvedEffectively*/
-Insert into Objects values(null, 'Probability');/*122*/
-Insert into Objects_references values(122,26,4);
-Insert into Objects_references values(122,34,5);
-Insert into Objects_references values(122,30,5);
-Insert into Parameters values(122,6,'0.7');
 Insert into Objects values(null, 'Probability');/*123*/
-Insert into Objects_references values(123,27,4);
+Insert into Objects_references values(123,26,4);
 Insert into Objects_references values(123,34,5);
 Insert into Objects_references values(123,30,5);
-Insert into Parameters values(123,6,'0.2');
+Insert into Parameters values(123,6,'0.7');
 Insert into Objects values(null, 'Probability');/*124*/
-Insert into Objects_references values(124,28,4);
+Insert into Objects_references values(124,27,4);
 Insert into Objects_references values(124,34,5);
 Insert into Objects_references values(124,30,5);
-Insert into Parameters values(124,6,'0.1');
-
+Insert into Parameters values(124,6,'0.2');
 Insert into Objects values(null, 'Probability');/*125*/
-Insert into Objects_references values(125,26,4);
+Insert into Objects_references values(125,28,4);
 Insert into Objects_references values(125,34,5);
-Insert into Objects_references values(125,31,5);
-Insert into Parameters values(125,6,'0.65');
+Insert into Objects_references values(125,30,5);
+Insert into Parameters values(125,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*126*/
-Insert into Objects_references values(126,27,4);
+Insert into Objects_references values(126,26,4);
 Insert into Objects_references values(126,34,5);
 Insert into Objects_references values(126,31,5);
-Insert into Parameters values(126,6,'0.25');
+Insert into Parameters values(126,6,'0.65');
 Insert into Objects values(null, 'Probability');/*127*/
-Insert into Objects_references values(127,28,4);
+Insert into Objects_references values(127,27,4);
 Insert into Objects_references values(127,34,5);
 Insert into Objects_references values(127,31,5);
-Insert into Parameters values(127,6,'0.1');
-
+Insert into Parameters values(127,6,'0.25');
 Insert into Objects values(null, 'Probability');/*128*/
-Insert into Objects_references values(128,26,4);
+Insert into Objects_references values(128,28,4);
 Insert into Objects_references values(128,34,5);
-Insert into Objects_references values(128,32,5);
-Insert into Parameters values(128,6,'0.6');
+Insert into Objects_references values(128,31,5);
+Insert into Parameters values(128,6,'0.1');
+
 Insert into Objects values(null, 'Probability');/*129*/
-Insert into Objects_references values(129,27,4);
+Insert into Objects_references values(129,26,4);
 Insert into Objects_references values(129,34,5);
 Insert into Objects_references values(129,32,5);
-Insert into Parameters values(129,6,'0.25');
+Insert into Parameters values(129,6,'0.6');
 Insert into Objects values(null, 'Probability');/*130*/
-Insert into Objects_references values(130,28,4);
+Insert into Objects_references values(130,27,4);
 Insert into Objects_references values(130,34,5);
 Insert into Objects_references values(130,32,5);
-Insert into Parameters values(130,6,'0.15');
-
-
+Insert into Parameters values(130,6,'0.25');
 Insert into Objects values(null, 'Probability');/*131*/
-Insert into Objects_references values(131,26,4);
-Insert into Objects_references values(131,35,5);
-Insert into Objects_references values(131,30,5);
-Insert into Parameters values(131,6,'0.6');
+Insert into Objects_references values(131,28,4);
+Insert into Objects_references values(131,34,5);
+Insert into Objects_references values(131,32,5);
+Insert into Parameters values(131,6,'0.15');
+
+
 Insert into Objects values(null, 'Probability');/*132*/
-Insert into Objects_references values(132,27,4);
+Insert into Objects_references values(132,26,4);
 Insert into Objects_references values(132,35,5);
 Insert into Objects_references values(132,30,5);
-Insert into Parameters values(132,6,'0.2');
+Insert into Parameters values(132,6,'0.6');
 Insert into Objects values(null, 'Probability');/*133*/
-Insert into Objects_references values(133,28,4);
+Insert into Objects_references values(133,27,4);
 Insert into Objects_references values(133,35,5);
 Insert into Objects_references values(133,30,5);
 Insert into Parameters values(133,6,'0.2');
-
 Insert into Objects values(null, 'Probability');/*134*/
-Insert into Objects_references values(134,26,4);
+Insert into Objects_references values(134,28,4);
 Insert into Objects_references values(134,35,5);
-Insert into Objects_references values(134,31,5);
-Insert into Parameters values(134,6,'0.55');
+Insert into Objects_references values(134,30,5);
+Insert into Parameters values(134,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*135*/
-Insert into Objects_references values(135,27,4);
+Insert into Objects_references values(135,26,4);
 Insert into Objects_references values(135,35,5);
 Insert into Objects_references values(135,31,5);
-Insert into Parameters values(135,6,'0.25');
+Insert into Parameters values(135,6,'0.55');
 Insert into Objects values(null, 'Probability');/*136*/
-Insert into Objects_references values(136,28,4);
+Insert into Objects_references values(136,27,4);
 Insert into Objects_references values(136,35,5);
 Insert into Objects_references values(136,31,5);
-Insert into Parameters values(136,6,'0.2');
-
+Insert into Parameters values(136,6,'0.25');
 Insert into Objects values(null, 'Probability');/*137*/
-Insert into Objects_references values(137,26,4);
+Insert into Objects_references values(137,28,4);
 Insert into Objects_references values(137,35,5);
-Insert into Objects_references values(137,32,5);
-Insert into Parameters values(137,6,'0.5');
+Insert into Objects_references values(137,31,5);
+Insert into Parameters values(137,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*138*/
-Insert into Objects_references values(138,27,4);
+Insert into Objects_references values(138,26,4);
 Insert into Objects_references values(138,35,5);
 Insert into Objects_references values(138,32,5);
-Insert into Parameters values(138,6,'0.25');
-Insert into Objects values(null, 'Probability');/*138*/
-Insert into Objects_references values(138,28,4);
-Insert into Objects_references values(138,35,5);
-Insert into Objects_references values(138,32,5);
-Insert into Parameters values(138,6,'0.25');
-
-
+Insert into Parameters values(138,6,'0.5');
+Insert into Objects values(null, 'Probability');/*139*/
+Insert into Objects_references values(139,27,4);
+Insert into Objects_references values(139,35,5);
+Insert into Objects_references values(139,32,5);
+Insert into Parameters values(139,6,'0.25');
 Insert into Objects values(null, 'Probability');/*140*/
-Insert into Objects_references values(140,26,4);
-Insert into Objects_references values(140,36,5);
-Insert into Objects_references values(140,30,5);
-Insert into Parameters values(140,6,'0.5');
+Insert into Objects_references values(140,28,4);
+Insert into Objects_references values(140,35,5);
+Insert into Objects_references values(140,32,5);
+Insert into Parameters values(140,6,'0.25');
+
+
 Insert into Objects values(null, 'Probability');/*141*/
-Insert into Objects_references values(141,27,4);
+Insert into Objects_references values(141,26,4);
 Insert into Objects_references values(141,36,5);
 Insert into Objects_references values(141,30,5);
-Insert into Parameters values(141,6,'0.3');
+Insert into Parameters values(141,6,'0.5');
 Insert into Objects values(null, 'Probability');/*142*/
-Insert into Objects_references values(142,28,4);
+Insert into Objects_references values(142,27,4);
 Insert into Objects_references values(142,36,5);
 Insert into Objects_references values(142,30,5);
-Insert into Parameters values(142,6,'0.2');
-
+Insert into Parameters values(142,6,'0.3');
 Insert into Objects values(null, 'Probability');/*143*/
-Insert into Objects_references values(143,26,4);
+Insert into Objects_references values(143,28,4);
 Insert into Objects_references values(143,36,5);
-Insert into Objects_references values(143,31,5);
-Insert into Parameters values(143,6,'0.4');
+Insert into Objects_references values(143,30,5);
+Insert into Parameters values(143,6,'0.2');
+
 Insert into Objects values(null, 'Probability');/*144*/
-Insert into Objects_references values(144,27,4);
+Insert into Objects_references values(144,26,4);
 Insert into Objects_references values(144,36,5);
 Insert into Objects_references values(144,31,5);
-Insert into Parameters values(144,6,'0.3');
+Insert into Parameters values(144,6,'0.4');
 Insert into Objects values(null, 'Probability');/*145*/
-Insert into Objects_references values(145,28,4);
+Insert into Objects_references values(145,27,4);
 Insert into Objects_references values(145,36,5);
 Insert into Objects_references values(145,31,5);
 Insert into Parameters values(145,6,'0.3');
-
 Insert into Objects values(null, 'Probability');/*146*/
-Insert into Objects_references values(146,26,4);
+Insert into Objects_references values(146,28,4);
 Insert into Objects_references values(146,36,5);
-Insert into Objects_references values(146,32,5);
+Insert into Objects_references values(146,31,5);
 Insert into Parameters values(146,6,'0.3');
+
 Insert into Objects values(null, 'Probability');/*147*/
-Insert into Objects_references values(147,27,4);
+Insert into Objects_references values(147,26,4);
 Insert into Objects_references values(147,36,5);
 Insert into Objects_references values(147,32,5);
 Insert into Parameters values(147,6,'0.3');
 Insert into Objects values(null, 'Probability');/*148*/
-Insert into Objects_references values(148,28,4);
+Insert into Objects_references values(148,27,4);
 Insert into Objects_references values(148,36,5);
 Insert into Objects_references values(148,32,5);
-Insert into Parameters values(148,6,'0.4');
-/*Able*/
+Insert into Parameters values(148,6,'0.3');
 Insert into Objects values(null, 'Probability');/*149*/
-Insert into Objects_references values(149, 34, 4);
-Insert into Objects_references values(149, 10, 5);
-Insert into Objects_references values(149, 22, 5);
-Insert into Objects_references values(149, 6, 5);
-Insert into Objects_references values(149, 18, 5);
-Insert into Parameters values(149, 6, '0.33');
+Insert into Objects_references values(149,28,4);
+Insert into Objects_references values(149,36,5);
+Insert into Objects_references values(149,32,5);
+Insert into Parameters values(149,6,'0.4');
+/*Able*/
 Insert into Objects values(null, 'Probability');/*150*/
-Insert into Objects_references values(150, 35, 4);
+Insert into Objects_references values(150, 34, 4);
 Insert into Objects_references values(150, 10, 5);
 Insert into Objects_references values(150, 22, 5);
 Insert into Objects_references values(150, 6, 5);
 Insert into Objects_references values(150, 18, 5);
 Insert into Parameters values(150, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*151*/
-Insert into Objects_references values(151, 36, 4);
+Insert into Objects_references values(151, 35, 4);
 Insert into Objects_references values(151, 10, 5);
 Insert into Objects_references values(151, 22, 5);
 Insert into Objects_references values(151, 6, 5);
 Insert into Objects_references values(151, 18, 5);
 Insert into Parameters values(151, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*152*/
-Insert into Objects_references values(152, 34, 4);
+Insert into Objects_references values(152, 36, 4);
 Insert into Objects_references values(152, 10, 5);
 Insert into Objects_references values(152, 22, 5);
 Insert into Objects_references values(152, 6, 5);
-Insert into Objects_references values(152, 19, 5);
+Insert into Objects_references values(152, 18, 5);
 Insert into Parameters values(152, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*153*/
-Insert into Objects_references values(153, 35, 4);
+Insert into Objects_references values(153, 34, 4);
 Insert into Objects_references values(153, 10, 5);
 Insert into Objects_references values(153, 22, 5);
 Insert into Objects_references values(153, 6, 5);
 Insert into Objects_references values(153, 19, 5);
 Insert into Parameters values(153, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*154*/
-Insert into Objects_references values(154, 36, 4);
+Insert into Objects_references values(154, 35, 4);
 Insert into Objects_references values(154, 10, 5);
 Insert into Objects_references values(154, 22, 5);
 Insert into Objects_references values(154, 6, 5);
 Insert into Objects_references values(154, 19, 5);
 Insert into Parameters values(154, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*155*/
-Insert into Objects_references values(155, 34, 4);
+Insert into Objects_references values(155, 36, 4);
 Insert into Objects_references values(155, 10, 5);
 Insert into Objects_references values(155, 22, 5);
 Insert into Objects_references values(155, 6, 5);
-Insert into Objects_references values(155, 20, 5);
+Insert into Objects_references values(155, 19, 5);
 Insert into Parameters values(155, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*156*/
-Insert into Objects_references values(156, 35, 4);
+Insert into Objects_references values(156, 34, 4);
 Insert into Objects_references values(156, 10, 5);
 Insert into Objects_references values(156, 22, 5);
 Insert into Objects_references values(156, 6, 5);
 Insert into Objects_references values(156, 20, 5);
 Insert into Parameters values(156, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*157*/
-Insert into Objects_references values(157, 36, 4);
+Insert into Objects_references values(157, 35, 4);
 Insert into Objects_references values(157, 10, 5);
 Insert into Objects_references values(157, 22, 5);
 Insert into Objects_references values(157, 6, 5);
 Insert into Objects_references values(157, 20, 5);
 Insert into Parameters values(157, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*158*/
-Insert into Objects_references values(158, 34, 4);
+Insert into Objects_references values(158, 36, 4);
 Insert into Objects_references values(158, 10, 5);
 Insert into Objects_references values(158, 22, 5);
-Insert into Objects_references values(158, 7, 5);
-Insert into Objects_references values(158, 18, 5);
+Insert into Objects_references values(158, 6, 5);
+Insert into Objects_references values(158, 20, 5);
 Insert into Parameters values(158, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*159*/
-Insert into Objects_references values(159, 35, 4);
+Insert into Objects_references values(159, 34, 4);
 Insert into Objects_references values(159, 10, 5);
 Insert into Objects_references values(159, 22, 5);
 Insert into Objects_references values(159, 7, 5);
 Insert into Objects_references values(159, 18, 5);
 Insert into Parameters values(159, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*160*/
-Insert into Objects_references values(160, 36, 4);
+Insert into Objects_references values(160, 35, 4);
 Insert into Objects_references values(160, 10, 5);
 Insert into Objects_references values(160, 22, 5);
 Insert into Objects_references values(160, 7, 5);
 Insert into Objects_references values(160, 18, 5);
 Insert into Parameters values(160, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*161*/
-Insert into Objects_references values(161, 34, 4);
+Insert into Objects_references values(161, 36, 4);
 Insert into Objects_references values(161, 10, 5);
 Insert into Objects_references values(161, 22, 5);
 Insert into Objects_references values(161, 7, 5);
-Insert into Objects_references values(161, 19, 5);
+Insert into Objects_references values(161, 18, 5);
 Insert into Parameters values(161, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*162*/
-Insert into Objects_references values(162, 35, 4);
+Insert into Objects_references values(162, 34, 4);
 Insert into Objects_references values(162, 10, 5);
 Insert into Objects_references values(162, 22, 5);
 Insert into Objects_references values(162, 7, 5);
 Insert into Objects_references values(162, 19, 5);
 Insert into Parameters values(162, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*163*/
-Insert into Objects_references values(163, 36, 4);
+Insert into Objects_references values(163, 35, 4);
 Insert into Objects_references values(163, 10, 5);
 Insert into Objects_references values(163, 22, 5);
 Insert into Objects_references values(163, 7, 5);
 Insert into Objects_references values(163, 19, 5);
 Insert into Parameters values(163, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*164*/
-Insert into Objects_references values(164, 34, 4);
+Insert into Objects_references values(164, 36, 4);
 Insert into Objects_references values(164, 10, 5);
 Insert into Objects_references values(164, 22, 5);
 Insert into Objects_references values(164, 7, 5);
-Insert into Objects_references values(164, 20, 5);
+Insert into Objects_references values(164, 19, 5);
 Insert into Parameters values(164, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*165*/
-Insert into Objects_references values(165, 35, 4);
+Insert into Objects_references values(165, 34, 4);
 Insert into Objects_references values(165, 10, 5);
 Insert into Objects_references values(165, 22, 5);
 Insert into Objects_references values(165, 7, 5);
 Insert into Objects_references values(165, 20, 5);
 Insert into Parameters values(165, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*166*/
-Insert into Objects_references values(166, 36, 4);
+Insert into Objects_references values(166, 35, 4);
 Insert into Objects_references values(166, 10, 5);
 Insert into Objects_references values(166, 22, 5);
 Insert into Objects_references values(166, 7, 5);
 Insert into Objects_references values(166, 20, 5);
 Insert into Parameters values(166, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*167*/
-Insert into Objects_references values(167, 34, 4);
+Insert into Objects_references values(167, 36, 4);
 Insert into Objects_references values(167, 10, 5);
 Insert into Objects_references values(167, 22, 5);
-Insert into Objects_references values(167, 8, 5);
-Insert into Objects_references values(167, 18, 5);
+Insert into Objects_references values(167, 7, 5);
+Insert into Objects_references values(167, 20, 5);
 Insert into Parameters values(167, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*168*/
-Insert into Objects_references values(168, 35, 4);
+Insert into Objects_references values(168, 34, 4);
 Insert into Objects_references values(168, 10, 5);
 Insert into Objects_references values(168, 22, 5);
 Insert into Objects_references values(168, 8, 5);
 Insert into Objects_references values(168, 18, 5);
 Insert into Parameters values(168, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*169*/
-Insert into Objects_references values(169, 36, 4);
+Insert into Objects_references values(169, 35, 4);
 Insert into Objects_references values(169, 10, 5);
 Insert into Objects_references values(169, 22, 5);
 Insert into Objects_references values(169, 8, 5);
 Insert into Objects_references values(169, 18, 5);
 Insert into Parameters values(169, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*170*/
-Insert into Objects_references values(170, 34, 4);
+Insert into Objects_references values(170, 36, 4);
 Insert into Objects_references values(170, 10, 5);
 Insert into Objects_references values(170, 22, 5);
 Insert into Objects_references values(170, 8, 5);
-Insert into Objects_references values(170, 19, 5);
+Insert into Objects_references values(170, 18, 5);
 Insert into Parameters values(170, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*171*/
-Insert into Objects_references values(171, 35, 4);
+Insert into Objects_references values(171, 34, 4);
 Insert into Objects_references values(171, 10, 5);
 Insert into Objects_references values(171, 22, 5);
 Insert into Objects_references values(171, 8, 5);
 Insert into Objects_references values(171, 19, 5);
 Insert into Parameters values(171, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*172*/
-Insert into Objects_references values(172, 36, 4);
+Insert into Objects_references values(172, 35, 4);
 Insert into Objects_references values(172, 10, 5);
 Insert into Objects_references values(172, 22, 5);
 Insert into Objects_references values(172, 8, 5);
 Insert into Objects_references values(172, 19, 5);
 Insert into Parameters values(172, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*173*/
-Insert into Objects_references values(173, 34, 4);
+Insert into Objects_references values(173, 36, 4);
 Insert into Objects_references values(173, 10, 5);
 Insert into Objects_references values(173, 22, 5);
 Insert into Objects_references values(173, 8, 5);
-Insert into Objects_references values(173, 20, 5);
+Insert into Objects_references values(173, 19, 5);
 Insert into Parameters values(173, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*174*/
-Insert into Objects_references values(174, 35, 4);
+Insert into Objects_references values(174, 34, 4);
 Insert into Objects_references values(174, 10, 5);
 Insert into Objects_references values(174, 22, 5);
 Insert into Objects_references values(174, 8, 5);
 Insert into Objects_references values(174, 20, 5);
 Insert into Parameters values(174, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*175*/
-Insert into Objects_references values(175, 36, 4);
+Insert into Objects_references values(175, 35, 4);
 Insert into Objects_references values(175, 10, 5);
 Insert into Objects_references values(175, 22, 5);
 Insert into Objects_references values(175, 8, 5);
 Insert into Objects_references values(175, 20, 5);
 Insert into Parameters values(175, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*176*/
-Insert into Objects_references values(176, 34, 4);
+Insert into Objects_references values(176, 36, 4);
 Insert into Objects_references values(176, 10, 5);
-Insert into Objects_references values(176, 23, 5);
-Insert into Objects_references values(176, 6, 5);
-Insert into Objects_references values(176, 18, 5);
+Insert into Objects_references values(176, 22, 5);
+Insert into Objects_references values(176, 8, 5);
+Insert into Objects_references values(176, 20, 5);
 Insert into Parameters values(176, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*177*/
-Insert into Objects_references values(177, 35, 4);
+Insert into Objects_references values(177, 34, 4);
 Insert into Objects_references values(177, 10, 5);
 Insert into Objects_references values(177, 23, 5);
 Insert into Objects_references values(177, 6, 5);
 Insert into Objects_references values(177, 18, 5);
 Insert into Parameters values(177, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*178*/
-Insert into Objects_references values(178, 36, 4);
+Insert into Objects_references values(178, 35, 4);
 Insert into Objects_references values(178, 10, 5);
 Insert into Objects_references values(178, 23, 5);
 Insert into Objects_references values(178, 6, 5);
 Insert into Objects_references values(178, 18, 5);
 Insert into Parameters values(178, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*179*/
-Insert into Objects_references values(179, 34, 4);
+Insert into Objects_references values(179, 36, 4);
 Insert into Objects_references values(179, 10, 5);
 Insert into Objects_references values(179, 23, 5);
 Insert into Objects_references values(179, 6, 5);
-Insert into Objects_references values(179, 19, 5);
+Insert into Objects_references values(179, 18, 5);
 Insert into Parameters values(179, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*180*/
-Insert into Objects_references values(180, 35, 4);
+Insert into Objects_references values(180, 34, 4);
 Insert into Objects_references values(180, 10, 5);
 Insert into Objects_references values(180, 23, 5);
 Insert into Objects_references values(180, 6, 5);
 Insert into Objects_references values(180, 19, 5);
 Insert into Parameters values(180, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*181*/
-Insert into Objects_references values(181, 36, 4);
+Insert into Objects_references values(181, 35, 4);
 Insert into Objects_references values(181, 10, 5);
 Insert into Objects_references values(181, 23, 5);
 Insert into Objects_references values(181, 6, 5);
 Insert into Objects_references values(181, 19, 5);
 Insert into Parameters values(181, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*182*/
-Insert into Objects_references values(182, 34, 4);
+Insert into Objects_references values(182, 36, 4);
 Insert into Objects_references values(182, 10, 5);
 Insert into Objects_references values(182, 23, 5);
 Insert into Objects_references values(182, 6, 5);
-Insert into Objects_references values(182, 20, 5);
+Insert into Objects_references values(182, 19, 5);
 Insert into Parameters values(182, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*183*/
-Insert into Objects_references values(183, 35, 4);
+Insert into Objects_references values(183, 34, 4);
 Insert into Objects_references values(183, 10, 5);
 Insert into Objects_references values(183, 23, 5);
 Insert into Objects_references values(183, 6, 5);
 Insert into Objects_references values(183, 20, 5);
 Insert into Parameters values(183, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*184*/
-Insert into Objects_references values(184, 36, 4);
+Insert into Objects_references values(184, 35, 4);
 Insert into Objects_references values(184, 10, 5);
 Insert into Objects_references values(184, 23, 5);
 Insert into Objects_references values(184, 6, 5);
 Insert into Objects_references values(184, 20, 5);
 Insert into Parameters values(184, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*185*/
-Insert into Objects_references values(185, 34, 4);
+Insert into Objects_references values(185, 36, 4);
 Insert into Objects_references values(185, 10, 5);
 Insert into Objects_references values(185, 23, 5);
-Insert into Objects_references values(185, 7, 5);
-Insert into Objects_references values(185, 18, 5);
+Insert into Objects_references values(185, 6, 5);
+Insert into Objects_references values(185, 20, 5);
 Insert into Parameters values(185, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*186*/
-Insert into Objects_references values(186, 35, 4);
+Insert into Objects_references values(186, 34, 4);
 Insert into Objects_references values(186, 10, 5);
 Insert into Objects_references values(186, 23, 5);
 Insert into Objects_references values(186, 7, 5);
 Insert into Objects_references values(186, 18, 5);
 Insert into Parameters values(186, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*187*/
-Insert into Objects_references values(187, 36, 4);
+Insert into Objects_references values(187, 35, 4);
 Insert into Objects_references values(187, 10, 5);
 Insert into Objects_references values(187, 23, 5);
 Insert into Objects_references values(187, 7, 5);
 Insert into Objects_references values(187, 18, 5);
 Insert into Parameters values(187, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*188*/
-Insert into Objects_references values(188, 34, 4);
+Insert into Objects_references values(188, 36, 4);
 Insert into Objects_references values(188, 10, 5);
 Insert into Objects_references values(188, 23, 5);
 Insert into Objects_references values(188, 7, 5);
-Insert into Objects_references values(188, 19, 5);
+Insert into Objects_references values(188, 18, 5);
 Insert into Parameters values(188, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*189*/
-Insert into Objects_references values(189, 35, 4);
+Insert into Objects_references values(189, 34, 4);
 Insert into Objects_references values(189, 10, 5);
 Insert into Objects_references values(189, 23, 5);
 Insert into Objects_references values(189, 7, 5);
 Insert into Objects_references values(189, 19, 5);
 Insert into Parameters values(189, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*190*/
-Insert into Objects_references values(190, 36, 4);
+Insert into Objects_references values(190, 35, 4);
 Insert into Objects_references values(190, 10, 5);
 Insert into Objects_references values(190, 23, 5);
 Insert into Objects_references values(190, 7, 5);
 Insert into Objects_references values(190, 19, 5);
 Insert into Parameters values(190, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*191*/
-Insert into Objects_references values(191, 34, 4);
+Insert into Objects_references values(191, 36, 4);
 Insert into Objects_references values(191, 10, 5);
 Insert into Objects_references values(191, 23, 5);
 Insert into Objects_references values(191, 7, 5);
-Insert into Objects_references values(191, 20, 5);
+Insert into Objects_references values(191, 19, 5);
 Insert into Parameters values(191, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*192*/
-Insert into Objects_references values(192, 35, 4);
+Insert into Objects_references values(192, 34, 4);
 Insert into Objects_references values(192, 10, 5);
 Insert into Objects_references values(192, 23, 5);
 Insert into Objects_references values(192, 7, 5);
 Insert into Objects_references values(192, 20, 5);
 Insert into Parameters values(192, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*193*/
-Insert into Objects_references values(193, 36, 4);
+Insert into Objects_references values(193, 35, 4);
 Insert into Objects_references values(193, 10, 5);
 Insert into Objects_references values(193, 23, 5);
 Insert into Objects_references values(193, 7, 5);
 Insert into Objects_references values(193, 20, 5);
 Insert into Parameters values(193, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*194*/
-Insert into Objects_references values(194, 34, 4);
+Insert into Objects_references values(194, 36, 4);
 Insert into Objects_references values(194, 10, 5);
 Insert into Objects_references values(194, 23, 5);
-Insert into Objects_references values(194, 8, 5);
-Insert into Objects_references values(194, 18, 5);
+Insert into Objects_references values(194, 7, 5);
+Insert into Objects_references values(194, 20, 5);
 Insert into Parameters values(194, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*195*/
-Insert into Objects_references values(195, 35, 4);
+Insert into Objects_references values(195, 34, 4);
 Insert into Objects_references values(195, 10, 5);
 Insert into Objects_references values(195, 23, 5);
 Insert into Objects_references values(195, 8, 5);
 Insert into Objects_references values(195, 18, 5);
 Insert into Parameters values(195, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*196*/
-Insert into Objects_references values(196, 36, 4);
+Insert into Objects_references values(196, 35, 4);
 Insert into Objects_references values(196, 10, 5);
 Insert into Objects_references values(196, 23, 5);
 Insert into Objects_references values(196, 8, 5);
 Insert into Objects_references values(196, 18, 5);
 Insert into Parameters values(196, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*197*/
-Insert into Objects_references values(197, 34, 4);
+Insert into Objects_references values(197, 36, 4);
 Insert into Objects_references values(197, 10, 5);
 Insert into Objects_references values(197, 23, 5);
 Insert into Objects_references values(197, 8, 5);
-Insert into Objects_references values(197, 19, 5);
+Insert into Objects_references values(197, 18, 5);
 Insert into Parameters values(197, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*198*/
-Insert into Objects_references values(198, 35, 4);
+Insert into Objects_references values(198, 34, 4);
 Insert into Objects_references values(198, 10, 5);
 Insert into Objects_references values(198, 23, 5);
 Insert into Objects_references values(198, 8, 5);
 Insert into Objects_references values(198, 19, 5);
 Insert into Parameters values(198, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*199*/
-Insert into Objects_references values(199, 36, 4);
+Insert into Objects_references values(199, 35, 4);
 Insert into Objects_references values(199, 10, 5);
 Insert into Objects_references values(199, 23, 5);
 Insert into Objects_references values(199, 8, 5);
 Insert into Objects_references values(199, 19, 5);
 Insert into Parameters values(199, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*200*/
-Insert into Objects_references values(200, 34, 4);
+Insert into Objects_references values(200, 36, 4);
 Insert into Objects_references values(200, 10, 5);
 Insert into Objects_references values(200, 23, 5);
 Insert into Objects_references values(200, 8, 5);
-Insert into Objects_references values(200, 20, 5);
+Insert into Objects_references values(200, 19, 5);
 Insert into Parameters values(200, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*201*/
-Insert into Objects_references values(201, 35, 4);
+Insert into Objects_references values(201, 34, 4);
 Insert into Objects_references values(201, 10, 5);
 Insert into Objects_references values(201, 23, 5);
 Insert into Objects_references values(201, 8, 5);
 Insert into Objects_references values(201, 20, 5);
 Insert into Parameters values(201, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*202*/
-Insert into Objects_references values(202, 36, 4);
+Insert into Objects_references values(202, 35, 4);
 Insert into Objects_references values(202, 10, 5);
 Insert into Objects_references values(202, 23, 5);
 Insert into Objects_references values(202, 8, 5);
 Insert into Objects_references values(202, 20, 5);
 Insert into Parameters values(202, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*203*/
-Insert into Objects_references values(203, 34, 4);
+Insert into Objects_references values(203, 36, 4);
 Insert into Objects_references values(203, 10, 5);
-Insert into Objects_references values(203, 24, 5);
-Insert into Objects_references values(203, 6, 5);
-Insert into Objects_references values(203, 18, 5);
+Insert into Objects_references values(203, 23, 5);
+Insert into Objects_references values(203, 8, 5);
+Insert into Objects_references values(203, 20, 5);
 Insert into Parameters values(203, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*204*/
-Insert into Objects_references values(204, 35, 4);
+Insert into Objects_references values(204, 34, 4);
 Insert into Objects_references values(204, 10, 5);
 Insert into Objects_references values(204, 24, 5);
 Insert into Objects_references values(204, 6, 5);
 Insert into Objects_references values(204, 18, 5);
 Insert into Parameters values(204, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*205*/
-Insert into Objects_references values(205, 36, 4);
+Insert into Objects_references values(205, 35, 4);
 Insert into Objects_references values(205, 10, 5);
 Insert into Objects_references values(205, 24, 5);
 Insert into Objects_references values(205, 6, 5);
 Insert into Objects_references values(205, 18, 5);
 Insert into Parameters values(205, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*206*/
-Insert into Objects_references values(206, 34, 4);
+Insert into Objects_references values(206, 36, 4);
 Insert into Objects_references values(206, 10, 5);
 Insert into Objects_references values(206, 24, 5);
 Insert into Objects_references values(206, 6, 5);
-Insert into Objects_references values(206, 19, 5);
+Insert into Objects_references values(206, 18, 5);
 Insert into Parameters values(206, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*207*/
-Insert into Objects_references values(207, 35, 4);
+Insert into Objects_references values(207, 34, 4);
 Insert into Objects_references values(207, 10, 5);
 Insert into Objects_references values(207, 24, 5);
 Insert into Objects_references values(207, 6, 5);
 Insert into Objects_references values(207, 19, 5);
 Insert into Parameters values(207, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*208*/
-Insert into Objects_references values(208, 36, 4);
+Insert into Objects_references values(208, 35, 4);
 Insert into Objects_references values(208, 10, 5);
 Insert into Objects_references values(208, 24, 5);
 Insert into Objects_references values(208, 6, 5);
 Insert into Objects_references values(208, 19, 5);
 Insert into Parameters values(208, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*209*/
-Insert into Objects_references values(209, 34, 4);
+Insert into Objects_references values(209, 36, 4);
 Insert into Objects_references values(209, 10, 5);
 Insert into Objects_references values(209, 24, 5);
 Insert into Objects_references values(209, 6, 5);
-Insert into Objects_references values(209, 20, 5);
+Insert into Objects_references values(209, 19, 5);
 Insert into Parameters values(209, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*210*/
-Insert into Objects_references values(210, 35, 4);
+Insert into Objects_references values(210, 34, 4);
 Insert into Objects_references values(210, 10, 5);
 Insert into Objects_references values(210, 24, 5);
 Insert into Objects_references values(210, 6, 5);
 Insert into Objects_references values(210, 20, 5);
 Insert into Parameters values(210, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*211*/
-Insert into Objects_references values(211, 36, 4);
+Insert into Objects_references values(211, 35, 4);
 Insert into Objects_references values(211, 10, 5);
 Insert into Objects_references values(211, 24, 5);
 Insert into Objects_references values(211, 6, 5);
 Insert into Objects_references values(211, 20, 5);
 Insert into Parameters values(211, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*212*/
-Insert into Objects_references values(212, 34, 4);
+Insert into Objects_references values(212, 36, 4);
 Insert into Objects_references values(212, 10, 5);
 Insert into Objects_references values(212, 24, 5);
-Insert into Objects_references values(212, 7, 5);
-Insert into Objects_references values(212, 18, 5);
+Insert into Objects_references values(212, 6, 5);
+Insert into Objects_references values(212, 20, 5);
 Insert into Parameters values(212, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*213*/
-Insert into Objects_references values(213, 35, 4);
+Insert into Objects_references values(213, 34, 4);
 Insert into Objects_references values(213, 10, 5);
 Insert into Objects_references values(213, 24, 5);
 Insert into Objects_references values(213, 7, 5);
 Insert into Objects_references values(213, 18, 5);
 Insert into Parameters values(213, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*214*/
-Insert into Objects_references values(214, 36, 4);
+Insert into Objects_references values(214, 35, 4);
 Insert into Objects_references values(214, 10, 5);
 Insert into Objects_references values(214, 24, 5);
 Insert into Objects_references values(214, 7, 5);
 Insert into Objects_references values(214, 18, 5);
 Insert into Parameters values(214, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*215*/
-Insert into Objects_references values(215, 34, 4);
+Insert into Objects_references values(215, 36, 4);
 Insert into Objects_references values(215, 10, 5);
 Insert into Objects_references values(215, 24, 5);
 Insert into Objects_references values(215, 7, 5);
-Insert into Objects_references values(215, 19, 5);
+Insert into Objects_references values(215, 18, 5);
 Insert into Parameters values(215, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*216*/
-Insert into Objects_references values(216, 35, 4);
+Insert into Objects_references values(216, 34, 4);
 Insert into Objects_references values(216, 10, 5);
 Insert into Objects_references values(216, 24, 5);
 Insert into Objects_references values(216, 7, 5);
 Insert into Objects_references values(216, 19, 5);
 Insert into Parameters values(216, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*217*/
-Insert into Objects_references values(217, 36, 4);
+Insert into Objects_references values(217, 35, 4);
 Insert into Objects_references values(217, 10, 5);
 Insert into Objects_references values(217, 24, 5);
 Insert into Objects_references values(217, 7, 5);
 Insert into Objects_references values(217, 19, 5);
 Insert into Parameters values(217, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*218*/
-Insert into Objects_references values(218, 34, 4);
+Insert into Objects_references values(218, 36, 4);
 Insert into Objects_references values(218, 10, 5);
 Insert into Objects_references values(218, 24, 5);
 Insert into Objects_references values(218, 7, 5);
-Insert into Objects_references values(218, 20, 5);
+Insert into Objects_references values(218, 19, 5);
 Insert into Parameters values(218, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*219*/
-Insert into Objects_references values(219, 35, 4);
+Insert into Objects_references values(219, 34, 4);
 Insert into Objects_references values(219, 10, 5);
 Insert into Objects_references values(219, 24, 5);
 Insert into Objects_references values(219, 7, 5);
 Insert into Objects_references values(219, 20, 5);
 Insert into Parameters values(219, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*220*/
-Insert into Objects_references values(220, 36, 4);
+Insert into Objects_references values(220, 35, 4);
 Insert into Objects_references values(220, 10, 5);
 Insert into Objects_references values(220, 24, 5);
 Insert into Objects_references values(220, 7, 5);
 Insert into Objects_references values(220, 20, 5);
 Insert into Parameters values(220, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*221*/
-Insert into Objects_references values(221, 34, 4);
+Insert into Objects_references values(221, 36, 4);
 Insert into Objects_references values(221, 10, 5);
 Insert into Objects_references values(221, 24, 5);
-Insert into Objects_references values(221, 8, 5);
-Insert into Objects_references values(221, 18, 5);
+Insert into Objects_references values(221, 7, 5);
+Insert into Objects_references values(221, 20, 5);
 Insert into Parameters values(221, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*222*/
-Insert into Objects_references values(222, 35, 4);
+Insert into Objects_references values(222, 34, 4);
 Insert into Objects_references values(222, 10, 5);
 Insert into Objects_references values(222, 24, 5);
 Insert into Objects_references values(222, 8, 5);
 Insert into Objects_references values(222, 18, 5);
 Insert into Parameters values(222, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*223*/
-Insert into Objects_references values(223, 36, 4);
+Insert into Objects_references values(223, 35, 4);
 Insert into Objects_references values(223, 10, 5);
 Insert into Objects_references values(223, 24, 5);
 Insert into Objects_references values(223, 8, 5);
 Insert into Objects_references values(223, 18, 5);
 Insert into Parameters values(223, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*224*/
-Insert into Objects_references values(224, 34, 4);
+Insert into Objects_references values(224, 36, 4);
 Insert into Objects_references values(224, 10, 5);
 Insert into Objects_references values(224, 24, 5);
 Insert into Objects_references values(224, 8, 5);
-Insert into Objects_references values(224, 19, 5);
+Insert into Objects_references values(224, 18, 5);
 Insert into Parameters values(224, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*225*/
-Insert into Objects_references values(225, 35, 4);
+Insert into Objects_references values(225, 34, 4);
 Insert into Objects_references values(225, 10, 5);
 Insert into Objects_references values(225, 24, 5);
 Insert into Objects_references values(225, 8, 5);
 Insert into Objects_references values(225, 19, 5);
 Insert into Parameters values(225, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*226*/
-Insert into Objects_references values(226, 36, 4);
+Insert into Objects_references values(226, 35, 4);
 Insert into Objects_references values(226, 10, 5);
 Insert into Objects_references values(226, 24, 5);
 Insert into Objects_references values(226, 8, 5);
 Insert into Objects_references values(226, 19, 5);
 Insert into Parameters values(226, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*227*/
-Insert into Objects_references values(227, 34, 4);
+Insert into Objects_references values(227, 36, 4);
 Insert into Objects_references values(227, 10, 5);
 Insert into Objects_references values(227, 24, 5);
 Insert into Objects_references values(227, 8, 5);
-Insert into Objects_references values(227, 20, 5);
+Insert into Objects_references values(227, 19, 5);
 Insert into Parameters values(227, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*228*/
-Insert into Objects_references values(228, 35, 4);
+Insert into Objects_references values(228, 34, 4);
 Insert into Objects_references values(228, 10, 5);
 Insert into Objects_references values(228, 24, 5);
 Insert into Objects_references values(228, 8, 5);
 Insert into Objects_references values(228, 20, 5);
 Insert into Parameters values(228, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*229*/
-Insert into Objects_references values(229, 36, 4);
+Insert into Objects_references values(229, 35, 4);
 Insert into Objects_references values(229, 10, 5);
 Insert into Objects_references values(229, 24, 5);
 Insert into Objects_references values(229, 8, 5);
 Insert into Objects_references values(229, 20, 5);
 Insert into Parameters values(229, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*230*/
-Insert into Objects_references values(230, 34, 4);
-Insert into Objects_references values(230, 11, 5);
-Insert into Objects_references values(230, 22, 5);
-Insert into Objects_references values(230, 6, 5);
-Insert into Objects_references values(230, 18, 5);
+Insert into Objects_references values(230, 36, 4);
+Insert into Objects_references values(230, 10, 5);
+Insert into Objects_references values(230, 24, 5);
+Insert into Objects_references values(230, 8, 5);
+Insert into Objects_references values(230, 20, 5);
 Insert into Parameters values(230, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*231*/
-Insert into Objects_references values(231, 35, 4);
+Insert into Objects_references values(231, 34, 4);
 Insert into Objects_references values(231, 11, 5);
 Insert into Objects_references values(231, 22, 5);
 Insert into Objects_references values(231, 6, 5);
 Insert into Objects_references values(231, 18, 5);
 Insert into Parameters values(231, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*232*/
-Insert into Objects_references values(232, 36, 4);
+Insert into Objects_references values(232, 35, 4);
 Insert into Objects_references values(232, 11, 5);
 Insert into Objects_references values(232, 22, 5);
 Insert into Objects_references values(232, 6, 5);
 Insert into Objects_references values(232, 18, 5);
 Insert into Parameters values(232, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*233*/
-Insert into Objects_references values(233, 34, 4);
+Insert into Objects_references values(233, 36, 4);
 Insert into Objects_references values(233, 11, 5);
 Insert into Objects_references values(233, 22, 5);
 Insert into Objects_references values(233, 6, 5);
-Insert into Objects_references values(233, 19, 5);
+Insert into Objects_references values(233, 18, 5);
 Insert into Parameters values(233, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*234*/
-Insert into Objects_references values(234, 35, 4);
+Insert into Objects_references values(234, 34, 4);
 Insert into Objects_references values(234, 11, 5);
 Insert into Objects_references values(234, 22, 5);
 Insert into Objects_references values(234, 6, 5);
 Insert into Objects_references values(234, 19, 5);
 Insert into Parameters values(234, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*235*/
-Insert into Objects_references values(235, 36, 4);
+Insert into Objects_references values(235, 35, 4);
 Insert into Objects_references values(235, 11, 5);
 Insert into Objects_references values(235, 22, 5);
 Insert into Objects_references values(235, 6, 5);
 Insert into Objects_references values(235, 19, 5);
 Insert into Parameters values(235, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*236*/
-Insert into Objects_references values(236, 34, 4);
+Insert into Objects_references values(236, 36, 4);
 Insert into Objects_references values(236, 11, 5);
 Insert into Objects_references values(236, 22, 5);
 Insert into Objects_references values(236, 6, 5);
-Insert into Objects_references values(236, 20, 5);
+Insert into Objects_references values(236, 19, 5);
 Insert into Parameters values(236, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*237*/
-Insert into Objects_references values(237, 35, 4);
+Insert into Objects_references values(237, 34, 4);
 Insert into Objects_references values(237, 11, 5);
 Insert into Objects_references values(237, 22, 5);
 Insert into Objects_references values(237, 6, 5);
 Insert into Objects_references values(237, 20, 5);
 Insert into Parameters values(237, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*238*/
-Insert into Objects_references values(238, 36, 4);
+Insert into Objects_references values(238, 35, 4);
 Insert into Objects_references values(238, 11, 5);
 Insert into Objects_references values(238, 22, 5);
 Insert into Objects_references values(238, 6, 5);
 Insert into Objects_references values(238, 20, 5);
 Insert into Parameters values(238, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*239*/
-Insert into Objects_references values(239, 34, 4);
+Insert into Objects_references values(239, 36, 4);
 Insert into Objects_references values(239, 11, 5);
 Insert into Objects_references values(239, 22, 5);
-Insert into Objects_references values(239, 7, 5);
-Insert into Objects_references values(239, 18, 5);
+Insert into Objects_references values(239, 6, 5);
+Insert into Objects_references values(239, 20, 5);
 Insert into Parameters values(239, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*240*/
-Insert into Objects_references values(240, 35, 4);
+Insert into Objects_references values(240, 34, 4);
 Insert into Objects_references values(240, 11, 5);
 Insert into Objects_references values(240, 22, 5);
 Insert into Objects_references values(240, 7, 5);
 Insert into Objects_references values(240, 18, 5);
 Insert into Parameters values(240, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*241*/
-Insert into Objects_references values(241, 36, 4);
+Insert into Objects_references values(241, 35, 4);
 Insert into Objects_references values(241, 11, 5);
 Insert into Objects_references values(241, 22, 5);
 Insert into Objects_references values(241, 7, 5);
 Insert into Objects_references values(241, 18, 5);
 Insert into Parameters values(241, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*242*/
-Insert into Objects_references values(242, 34, 4);
+Insert into Objects_references values(242, 36, 4);
 Insert into Objects_references values(242, 11, 5);
 Insert into Objects_references values(242, 22, 5);
 Insert into Objects_references values(242, 7, 5);
-Insert into Objects_references values(242, 19, 5);
+Insert into Objects_references values(242, 18, 5);
 Insert into Parameters values(242, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*243*/
-Insert into Objects_references values(243, 35, 4);
+Insert into Objects_references values(243, 34, 4);
 Insert into Objects_references values(243, 11, 5);
 Insert into Objects_references values(243, 22, 5);
 Insert into Objects_references values(243, 7, 5);
 Insert into Objects_references values(243, 19, 5);
 Insert into Parameters values(243, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*244*/
-Insert into Objects_references values(244, 36, 4);
+Insert into Objects_references values(244, 35, 4);
 Insert into Objects_references values(244, 11, 5);
 Insert into Objects_references values(244, 22, 5);
 Insert into Objects_references values(244, 7, 5);
 Insert into Objects_references values(244, 19, 5);
 Insert into Parameters values(244, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*245*/
-Insert into Objects_references values(245, 34, 4);
+Insert into Objects_references values(245, 36, 4);
 Insert into Objects_references values(245, 11, 5);
 Insert into Objects_references values(245, 22, 5);
 Insert into Objects_references values(245, 7, 5);
-Insert into Objects_references values(245, 20, 5);
+Insert into Objects_references values(245, 19, 5);
 Insert into Parameters values(245, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*246*/
-Insert into Objects_references values(246, 35, 4);
+Insert into Objects_references values(246, 34, 4);
 Insert into Objects_references values(246, 11, 5);
 Insert into Objects_references values(246, 22, 5);
 Insert into Objects_references values(246, 7, 5);
 Insert into Objects_references values(246, 20, 5);
 Insert into Parameters values(246, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*247*/
-Insert into Objects_references values(247, 36, 4);
+Insert into Objects_references values(247, 35, 4);
 Insert into Objects_references values(247, 11, 5);
 Insert into Objects_references values(247, 22, 5);
 Insert into Objects_references values(247, 7, 5);
 Insert into Objects_references values(247, 20, 5);
 Insert into Parameters values(247, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*248*/
-Insert into Objects_references values(248, 34, 4);
+Insert into Objects_references values(248, 36, 4);
 Insert into Objects_references values(248, 11, 5);
 Insert into Objects_references values(248, 22, 5);
-Insert into Objects_references values(248, 8, 5);
-Insert into Objects_references values(248, 18, 5);
+Insert into Objects_references values(248, 7, 5);
+Insert into Objects_references values(248, 20, 5);
 Insert into Parameters values(248, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*249*/
-Insert into Objects_references values(249, 35, 4);
+Insert into Objects_references values(249, 34, 4);
 Insert into Objects_references values(249, 11, 5);
 Insert into Objects_references values(249, 22, 5);
 Insert into Objects_references values(249, 8, 5);
 Insert into Objects_references values(249, 18, 5);
 Insert into Parameters values(249, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*250*/
-Insert into Objects_references values(250, 36, 4);
+Insert into Objects_references values(250, 35, 4);
 Insert into Objects_references values(250, 11, 5);
 Insert into Objects_references values(250, 22, 5);
 Insert into Objects_references values(250, 8, 5);
 Insert into Objects_references values(250, 18, 5);
 Insert into Parameters values(250, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*251*/
-Insert into Objects_references values(251, 34, 4);
+Insert into Objects_references values(251, 36, 4);
 Insert into Objects_references values(251, 11, 5);
 Insert into Objects_references values(251, 22, 5);
 Insert into Objects_references values(251, 8, 5);
-Insert into Objects_references values(251, 19, 5);
+Insert into Objects_references values(251, 18, 5);
 Insert into Parameters values(251, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*252*/
-Insert into Objects_references values(252, 35, 4);
+Insert into Objects_references values(252, 34, 4);
 Insert into Objects_references values(252, 11, 5);
 Insert into Objects_references values(252, 22, 5);
 Insert into Objects_references values(252, 8, 5);
 Insert into Objects_references values(252, 19, 5);
 Insert into Parameters values(252, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*253*/
-Insert into Objects_references values(253, 36, 4);
+Insert into Objects_references values(253, 35, 4);
 Insert into Objects_references values(253, 11, 5);
 Insert into Objects_references values(253, 22, 5);
 Insert into Objects_references values(253, 8, 5);
 Insert into Objects_references values(253, 19, 5);
 Insert into Parameters values(253, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*254*/
-Insert into Objects_references values(254, 34, 4);
+Insert into Objects_references values(254, 36, 4);
 Insert into Objects_references values(254, 11, 5);
 Insert into Objects_references values(254, 22, 5);
 Insert into Objects_references values(254, 8, 5);
-Insert into Objects_references values(254, 20, 5);
+Insert into Objects_references values(254, 19, 5);
 Insert into Parameters values(254, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*255*/
-Insert into Objects_references values(255, 35, 4);
+Insert into Objects_references values(255, 34, 4);
 Insert into Objects_references values(255, 11, 5);
 Insert into Objects_references values(255, 22, 5);
 Insert into Objects_references values(255, 8, 5);
 Insert into Objects_references values(255, 20, 5);
 Insert into Parameters values(255, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*256*/
-Insert into Objects_references values(256, 36, 4);
+Insert into Objects_references values(256, 35, 4);
 Insert into Objects_references values(256, 11, 5);
 Insert into Objects_references values(256, 22, 5);
 Insert into Objects_references values(256, 8, 5);
 Insert into Objects_references values(256, 20, 5);
 Insert into Parameters values(256, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*257*/
-Insert into Objects_references values(257, 34, 4);
+Insert into Objects_references values(257, 36, 4);
 Insert into Objects_references values(257, 11, 5);
-Insert into Objects_references values(257, 23, 5);
-Insert into Objects_references values(257, 6, 5);
-Insert into Objects_references values(257, 18, 5);
+Insert into Objects_references values(257, 22, 5);
+Insert into Objects_references values(257, 8, 5);
+Insert into Objects_references values(257, 20, 5);
 Insert into Parameters values(257, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*258*/
-Insert into Objects_references values(258, 35, 4);
+Insert into Objects_references values(258, 34, 4);
 Insert into Objects_references values(258, 11, 5);
 Insert into Objects_references values(258, 23, 5);
 Insert into Objects_references values(258, 6, 5);
 Insert into Objects_references values(258, 18, 5);
 Insert into Parameters values(258, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*259*/
-Insert into Objects_references values(259, 36, 4);
+Insert into Objects_references values(259, 35, 4);
 Insert into Objects_references values(259, 11, 5);
 Insert into Objects_references values(259, 23, 5);
 Insert into Objects_references values(259, 6, 5);
 Insert into Objects_references values(259, 18, 5);
 Insert into Parameters values(259, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*260*/
-Insert into Objects_references values(260, 34, 4);
+Insert into Objects_references values(260, 36, 4);
 Insert into Objects_references values(260, 11, 5);
 Insert into Objects_references values(260, 23, 5);
 Insert into Objects_references values(260, 6, 5);
-Insert into Objects_references values(260, 19, 5);
+Insert into Objects_references values(260, 18, 5);
 Insert into Parameters values(260, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*261*/
-Insert into Objects_references values(261, 35, 4);
+Insert into Objects_references values(261, 34, 4);
 Insert into Objects_references values(261, 11, 5);
 Insert into Objects_references values(261, 23, 5);
 Insert into Objects_references values(261, 6, 5);
 Insert into Objects_references values(261, 19, 5);
 Insert into Parameters values(261, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*262*/
-Insert into Objects_references values(262, 36, 4);
+Insert into Objects_references values(262, 35, 4);
 Insert into Objects_references values(262, 11, 5);
 Insert into Objects_references values(262, 23, 5);
 Insert into Objects_references values(262, 6, 5);
 Insert into Objects_references values(262, 19, 5);
 Insert into Parameters values(262, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*263*/
-Insert into Objects_references values(263, 34, 4);
+Insert into Objects_references values(263, 36, 4);
 Insert into Objects_references values(263, 11, 5);
 Insert into Objects_references values(263, 23, 5);
 Insert into Objects_references values(263, 6, 5);
-Insert into Objects_references values(263, 20, 5);
+Insert into Objects_references values(263, 19, 5);
 Insert into Parameters values(263, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*264*/
-Insert into Objects_references values(264, 35, 4);
+Insert into Objects_references values(264, 34, 4);
 Insert into Objects_references values(264, 11, 5);
 Insert into Objects_references values(264, 23, 5);
 Insert into Objects_references values(264, 6, 5);
 Insert into Objects_references values(264, 20, 5);
 Insert into Parameters values(264, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*265*/
-Insert into Objects_references values(265, 36, 4);
+Insert into Objects_references values(265, 35, 4);
 Insert into Objects_references values(265, 11, 5);
 Insert into Objects_references values(265, 23, 5);
 Insert into Objects_references values(265, 6, 5);
 Insert into Objects_references values(265, 20, 5);
 Insert into Parameters values(265, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*266*/
-Insert into Objects_references values(266, 34, 4);
+Insert into Objects_references values(266, 36, 4);
 Insert into Objects_references values(266, 11, 5);
 Insert into Objects_references values(266, 23, 5);
-Insert into Objects_references values(266, 7, 5);
-Insert into Objects_references values(266, 18, 5);
+Insert into Objects_references values(266, 6, 5);
+Insert into Objects_references values(266, 20, 5);
 Insert into Parameters values(266, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*267*/
-Insert into Objects_references values(267, 35, 4);
+Insert into Objects_references values(267, 34, 4);
 Insert into Objects_references values(267, 11, 5);
 Insert into Objects_references values(267, 23, 5);
 Insert into Objects_references values(267, 7, 5);
 Insert into Objects_references values(267, 18, 5);
 Insert into Parameters values(267, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*268*/
-Insert into Objects_references values(268, 36, 4);
+Insert into Objects_references values(268, 35, 4);
 Insert into Objects_references values(268, 11, 5);
 Insert into Objects_references values(268, 23, 5);
 Insert into Objects_references values(268, 7, 5);
 Insert into Objects_references values(268, 18, 5);
 Insert into Parameters values(268, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*269*/
-Insert into Objects_references values(269, 34, 4);
+Insert into Objects_references values(269, 36, 4);
 Insert into Objects_references values(269, 11, 5);
 Insert into Objects_references values(269, 23, 5);
 Insert into Objects_references values(269, 7, 5);
-Insert into Objects_references values(269, 19, 5);
+Insert into Objects_references values(269, 18, 5);
 Insert into Parameters values(269, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*270*/
-Insert into Objects_references values(270, 35, 4);
+Insert into Objects_references values(270, 34, 4);
 Insert into Objects_references values(270, 11, 5);
 Insert into Objects_references values(270, 23, 5);
 Insert into Objects_references values(270, 7, 5);
 Insert into Objects_references values(270, 19, 5);
 Insert into Parameters values(270, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*271*/
-Insert into Objects_references values(271, 36, 4);
+Insert into Objects_references values(271, 35, 4);
 Insert into Objects_references values(271, 11, 5);
 Insert into Objects_references values(271, 23, 5);
 Insert into Objects_references values(271, 7, 5);
 Insert into Objects_references values(271, 19, 5);
 Insert into Parameters values(271, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*272*/
-Insert into Objects_references values(272, 34, 4);
+Insert into Objects_references values(272, 36, 4);
 Insert into Objects_references values(272, 11, 5);
 Insert into Objects_references values(272, 23, 5);
 Insert into Objects_references values(272, 7, 5);
-Insert into Objects_references values(272, 20, 5);
+Insert into Objects_references values(272, 19, 5);
 Insert into Parameters values(272, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*273*/
-Insert into Objects_references values(273, 35, 4);
+Insert into Objects_references values(273, 34, 4);
 Insert into Objects_references values(273, 11, 5);
 Insert into Objects_references values(273, 23, 5);
 Insert into Objects_references values(273, 7, 5);
 Insert into Objects_references values(273, 20, 5);
 Insert into Parameters values(273, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*274*/
-Insert into Objects_references values(274, 36, 4);
+Insert into Objects_references values(274, 35, 4);
 Insert into Objects_references values(274, 11, 5);
 Insert into Objects_references values(274, 23, 5);
 Insert into Objects_references values(274, 7, 5);
 Insert into Objects_references values(274, 20, 5);
 Insert into Parameters values(274, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*275*/
-Insert into Objects_references values(275, 34, 4);
+Insert into Objects_references values(275, 36, 4);
 Insert into Objects_references values(275, 11, 5);
 Insert into Objects_references values(275, 23, 5);
-Insert into Objects_references values(275, 8, 5);
-Insert into Objects_references values(275, 18, 5);
+Insert into Objects_references values(275, 7, 5);
+Insert into Objects_references values(275, 20, 5);
 Insert into Parameters values(275, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*276*/
-Insert into Objects_references values(276, 35, 4);
+Insert into Objects_references values(276, 34, 4);
 Insert into Objects_references values(276, 11, 5);
 Insert into Objects_references values(276, 23, 5);
 Insert into Objects_references values(276, 8, 5);
 Insert into Objects_references values(276, 18, 5);
 Insert into Parameters values(276, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*277*/
-Insert into Objects_references values(277, 36, 4);
+Insert into Objects_references values(277, 35, 4);
 Insert into Objects_references values(277, 11, 5);
 Insert into Objects_references values(277, 23, 5);
 Insert into Objects_references values(277, 8, 5);
 Insert into Objects_references values(277, 18, 5);
 Insert into Parameters values(277, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*278*/
-Insert into Objects_references values(278, 34, 4);
+Insert into Objects_references values(278, 36, 4);
 Insert into Objects_references values(278, 11, 5);
 Insert into Objects_references values(278, 23, 5);
 Insert into Objects_references values(278, 8, 5);
-Insert into Objects_references values(278, 19, 5);
+Insert into Objects_references values(278, 18, 5);
 Insert into Parameters values(278, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*279*/
-Insert into Objects_references values(279, 35, 4);
+Insert into Objects_references values(279, 34, 4);
 Insert into Objects_references values(279, 11, 5);
 Insert into Objects_references values(279, 23, 5);
 Insert into Objects_references values(279, 8, 5);
 Insert into Objects_references values(279, 19, 5);
 Insert into Parameters values(279, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*280*/
-Insert into Objects_references values(280, 36, 4);
+Insert into Objects_references values(280, 35, 4);
 Insert into Objects_references values(280, 11, 5);
 Insert into Objects_references values(280, 23, 5);
 Insert into Objects_references values(280, 8, 5);
 Insert into Objects_references values(280, 19, 5);
 Insert into Parameters values(280, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*281*/
-Insert into Objects_references values(281, 34, 4);
+Insert into Objects_references values(281, 36, 4);
 Insert into Objects_references values(281, 11, 5);
 Insert into Objects_references values(281, 23, 5);
 Insert into Objects_references values(281, 8, 5);
-Insert into Objects_references values(281, 20, 5);
+Insert into Objects_references values(281, 19, 5);
 Insert into Parameters values(281, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*282*/
-Insert into Objects_references values(282, 35, 4);
+Insert into Objects_references values(282, 34, 4);
 Insert into Objects_references values(282, 11, 5);
 Insert into Objects_references values(282, 23, 5);
 Insert into Objects_references values(282, 8, 5);
 Insert into Objects_references values(282, 20, 5);
 Insert into Parameters values(282, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*283*/
-Insert into Objects_references values(283, 36, 4);
+Insert into Objects_references values(283, 35, 4);
 Insert into Objects_references values(283, 11, 5);
 Insert into Objects_references values(283, 23, 5);
 Insert into Objects_references values(283, 8, 5);
 Insert into Objects_references values(283, 20, 5);
 Insert into Parameters values(283, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*284*/
-Insert into Objects_references values(284, 34, 4);
+Insert into Objects_references values(284, 36, 4);
 Insert into Objects_references values(284, 11, 5);
-Insert into Objects_references values(284, 24, 5);
-Insert into Objects_references values(284, 6, 5);
-Insert into Objects_references values(284, 18, 5);
+Insert into Objects_references values(284, 23, 5);
+Insert into Objects_references values(284, 8, 5);
+Insert into Objects_references values(284, 20, 5);
 Insert into Parameters values(284, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*285*/
-Insert into Objects_references values(285, 35, 4);
+Insert into Objects_references values(285, 34, 4);
 Insert into Objects_references values(285, 11, 5);
 Insert into Objects_references values(285, 24, 5);
 Insert into Objects_references values(285, 6, 5);
 Insert into Objects_references values(285, 18, 5);
 Insert into Parameters values(285, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*286*/
-Insert into Objects_references values(286, 36, 4);
+Insert into Objects_references values(286, 35, 4);
 Insert into Objects_references values(286, 11, 5);
 Insert into Objects_references values(286, 24, 5);
 Insert into Objects_references values(286, 6, 5);
 Insert into Objects_references values(286, 18, 5);
 Insert into Parameters values(286, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*287*/
-Insert into Objects_references values(287, 34, 4);
+Insert into Objects_references values(287, 36, 4);
 Insert into Objects_references values(287, 11, 5);
 Insert into Objects_references values(287, 24, 5);
 Insert into Objects_references values(287, 6, 5);
-Insert into Objects_references values(287, 19, 5);
+Insert into Objects_references values(287, 18, 5);
 Insert into Parameters values(287, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*288*/
-Insert into Objects_references values(288, 35, 4);
+Insert into Objects_references values(288, 34, 4);
 Insert into Objects_references values(288, 11, 5);
 Insert into Objects_references values(288, 24, 5);
 Insert into Objects_references values(288, 6, 5);
 Insert into Objects_references values(288, 19, 5);
 Insert into Parameters values(288, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*289*/
-Insert into Objects_references values(289, 36, 4);
+Insert into Objects_references values(289, 35, 4);
 Insert into Objects_references values(289, 11, 5);
 Insert into Objects_references values(289, 24, 5);
 Insert into Objects_references values(289, 6, 5);
 Insert into Objects_references values(289, 19, 5);
 Insert into Parameters values(289, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*290*/
-Insert into Objects_references values(290, 34, 4);
+Insert into Objects_references values(290, 36, 4);
 Insert into Objects_references values(290, 11, 5);
 Insert into Objects_references values(290, 24, 5);
 Insert into Objects_references values(290, 6, 5);
-Insert into Objects_references values(290, 20, 5);
+Insert into Objects_references values(290, 19, 5);
 Insert into Parameters values(290, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*291*/
-Insert into Objects_references values(291, 35, 4);
+Insert into Objects_references values(291, 34, 4);
 Insert into Objects_references values(291, 11, 5);
 Insert into Objects_references values(291, 24, 5);
 Insert into Objects_references values(291, 6, 5);
 Insert into Objects_references values(291, 20, 5);
 Insert into Parameters values(291, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*292*/
-Insert into Objects_references values(292, 36, 4);
+Insert into Objects_references values(292, 35, 4);
 Insert into Objects_references values(292, 11, 5);
 Insert into Objects_references values(292, 24, 5);
 Insert into Objects_references values(292, 6, 5);
 Insert into Objects_references values(292, 20, 5);
 Insert into Parameters values(292, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*293*/
-Insert into Objects_references values(293, 34, 4);
+Insert into Objects_references values(293, 36, 4);
 Insert into Objects_references values(293, 11, 5);
 Insert into Objects_references values(293, 24, 5);
-Insert into Objects_references values(293, 7, 5);
-Insert into Objects_references values(293, 18, 5);
+Insert into Objects_references values(293, 6, 5);
+Insert into Objects_references values(293, 20, 5);
 Insert into Parameters values(293, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*294*/
-Insert into Objects_references values(294, 35, 4);
+Insert into Objects_references values(294, 34, 4);
 Insert into Objects_references values(294, 11, 5);
 Insert into Objects_references values(294, 24, 5);
 Insert into Objects_references values(294, 7, 5);
 Insert into Objects_references values(294, 18, 5);
 Insert into Parameters values(294, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*295*/
-Insert into Objects_references values(295, 36, 4);
+Insert into Objects_references values(295, 35, 4);
 Insert into Objects_references values(295, 11, 5);
 Insert into Objects_references values(295, 24, 5);
 Insert into Objects_references values(295, 7, 5);
 Insert into Objects_references values(295, 18, 5);
 Insert into Parameters values(295, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*296*/
-Insert into Objects_references values(296, 34, 4);
+Insert into Objects_references values(296, 36, 4);
 Insert into Objects_references values(296, 11, 5);
 Insert into Objects_references values(296, 24, 5);
 Insert into Objects_references values(296, 7, 5);
-Insert into Objects_references values(296, 19, 5);
+Insert into Objects_references values(296, 18, 5);
 Insert into Parameters values(296, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*297*/
-Insert into Objects_references values(297, 35, 4);
+Insert into Objects_references values(297, 34, 4);
 Insert into Objects_references values(297, 11, 5);
 Insert into Objects_references values(297, 24, 5);
 Insert into Objects_references values(297, 7, 5);
 Insert into Objects_references values(297, 19, 5);
 Insert into Parameters values(297, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*298*/
-Insert into Objects_references values(298, 36, 4);
+Insert into Objects_references values(298, 35, 4);
 Insert into Objects_references values(298, 11, 5);
 Insert into Objects_references values(298, 24, 5);
 Insert into Objects_references values(298, 7, 5);
 Insert into Objects_references values(298, 19, 5);
 Insert into Parameters values(298, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*299*/
-Insert into Objects_references values(299, 34, 4);
+Insert into Objects_references values(299, 36, 4);
 Insert into Objects_references values(299, 11, 5);
 Insert into Objects_references values(299, 24, 5);
 Insert into Objects_references values(299, 7, 5);
-Insert into Objects_references values(299, 20, 5);
+Insert into Objects_references values(299, 19, 5);
 Insert into Parameters values(299, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*300*/
-Insert into Objects_references values(300, 35, 4);
+Insert into Objects_references values(300, 34, 4);
 Insert into Objects_references values(300, 11, 5);
 Insert into Objects_references values(300, 24, 5);
 Insert into Objects_references values(300, 7, 5);
 Insert into Objects_references values(300, 20, 5);
 Insert into Parameters values(300, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*301*/
-Insert into Objects_references values(301, 36, 4);
+Insert into Objects_references values(301, 35, 4);
 Insert into Objects_references values(301, 11, 5);
 Insert into Objects_references values(301, 24, 5);
 Insert into Objects_references values(301, 7, 5);
 Insert into Objects_references values(301, 20, 5);
 Insert into Parameters values(301, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*302*/
-Insert into Objects_references values(302, 34, 4);
+Insert into Objects_references values(302, 36, 4);
 Insert into Objects_references values(302, 11, 5);
 Insert into Objects_references values(302, 24, 5);
-Insert into Objects_references values(302, 8, 5);
-Insert into Objects_references values(302, 18, 5);
+Insert into Objects_references values(302, 7, 5);
+Insert into Objects_references values(302, 20, 5);
 Insert into Parameters values(302, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*303*/
-Insert into Objects_references values(303, 35, 4);
+Insert into Objects_references values(303, 34, 4);
 Insert into Objects_references values(303, 11, 5);
 Insert into Objects_references values(303, 24, 5);
 Insert into Objects_references values(303, 8, 5);
 Insert into Objects_references values(303, 18, 5);
 Insert into Parameters values(303, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*304*/
-Insert into Objects_references values(304, 36, 4);
+Insert into Objects_references values(304, 35, 4);
 Insert into Objects_references values(304, 11, 5);
 Insert into Objects_references values(304, 24, 5);
 Insert into Objects_references values(304, 8, 5);
 Insert into Objects_references values(304, 18, 5);
 Insert into Parameters values(304, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*305*/
-Insert into Objects_references values(305, 34, 4);
+Insert into Objects_references values(305, 36, 4);
 Insert into Objects_references values(305, 11, 5);
 Insert into Objects_references values(305, 24, 5);
 Insert into Objects_references values(305, 8, 5);
-Insert into Objects_references values(305, 19, 5);
+Insert into Objects_references values(305, 18, 5);
 Insert into Parameters values(305, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*306*/
-Insert into Objects_references values(306, 35, 4);
+Insert into Objects_references values(306, 34, 4);
 Insert into Objects_references values(306, 11, 5);
 Insert into Objects_references values(306, 24, 5);
 Insert into Objects_references values(306, 8, 5);
 Insert into Objects_references values(306, 19, 5);
 Insert into Parameters values(306, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*307*/
-Insert into Objects_references values(307, 36, 4);
+Insert into Objects_references values(307, 35, 4);
 Insert into Objects_references values(307, 11, 5);
 Insert into Objects_references values(307, 24, 5);
 Insert into Objects_references values(307, 8, 5);
 Insert into Objects_references values(307, 19, 5);
 Insert into Parameters values(307, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*308*/
-Insert into Objects_references values(308, 34, 4);
+Insert into Objects_references values(308, 36, 4);
 Insert into Objects_references values(308, 11, 5);
 Insert into Objects_references values(308, 24, 5);
 Insert into Objects_references values(308, 8, 5);
-Insert into Objects_references values(308, 20, 5);
+Insert into Objects_references values(308, 19, 5);
 Insert into Parameters values(308, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*309*/
-Insert into Objects_references values(309, 35, 4);
+Insert into Objects_references values(309, 34, 4);
 Insert into Objects_references values(309, 11, 5);
 Insert into Objects_references values(309, 24, 5);
 Insert into Objects_references values(309, 8, 5);
 Insert into Objects_references values(309, 20, 5);
 Insert into Parameters values(309, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*310*/
-Insert into Objects_references values(310, 36, 4);
+Insert into Objects_references values(310, 35, 4);
 Insert into Objects_references values(310, 11, 5);
 Insert into Objects_references values(310, 24, 5);
 Insert into Objects_references values(310, 8, 5);
 Insert into Objects_references values(310, 20, 5);
 Insert into Parameters values(310, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*311*/
-Insert into Objects_references values(311, 34, 4);
-Insert into Objects_references values(311, 12, 5);
-Insert into Objects_references values(311, 22, 5);
-Insert into Objects_references values(311, 6, 5);
-Insert into Objects_references values(311, 18, 5);
+Insert into Objects_references values(311, 36, 4);
+Insert into Objects_references values(311, 11, 5);
+Insert into Objects_references values(311, 24, 5);
+Insert into Objects_references values(311, 8, 5);
+Insert into Objects_references values(311, 20, 5);
 Insert into Parameters values(311, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*312*/
-Insert into Objects_references values(312, 35, 4);
+Insert into Objects_references values(312, 34, 4);
 Insert into Objects_references values(312, 12, 5);
 Insert into Objects_references values(312, 22, 5);
 Insert into Objects_references values(312, 6, 5);
 Insert into Objects_references values(312, 18, 5);
 Insert into Parameters values(312, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*313*/
-Insert into Objects_references values(313, 36, 4);
+Insert into Objects_references values(313, 35, 4);
 Insert into Objects_references values(313, 12, 5);
 Insert into Objects_references values(313, 22, 5);
 Insert into Objects_references values(313, 6, 5);
 Insert into Objects_references values(313, 18, 5);
 Insert into Parameters values(313, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*314*/
-Insert into Objects_references values(314, 34, 4);
+Insert into Objects_references values(314, 36, 4);
 Insert into Objects_references values(314, 12, 5);
 Insert into Objects_references values(314, 22, 5);
 Insert into Objects_references values(314, 6, 5);
-Insert into Objects_references values(314, 19, 5);
+Insert into Objects_references values(314, 18, 5);
 Insert into Parameters values(314, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*315*/
-Insert into Objects_references values(315, 35, 4);
+Insert into Objects_references values(315, 34, 4);
 Insert into Objects_references values(315, 12, 5);
 Insert into Objects_references values(315, 22, 5);
 Insert into Objects_references values(315, 6, 5);
 Insert into Objects_references values(315, 19, 5);
 Insert into Parameters values(315, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*316*/
-Insert into Objects_references values(316, 36, 4);
+Insert into Objects_references values(316, 35, 4);
 Insert into Objects_references values(316, 12, 5);
 Insert into Objects_references values(316, 22, 5);
 Insert into Objects_references values(316, 6, 5);
 Insert into Objects_references values(316, 19, 5);
 Insert into Parameters values(316, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*317*/
-Insert into Objects_references values(317, 34, 4);
+Insert into Objects_references values(317, 36, 4);
 Insert into Objects_references values(317, 12, 5);
 Insert into Objects_references values(317, 22, 5);
 Insert into Objects_references values(317, 6, 5);
-Insert into Objects_references values(317, 20, 5);
+Insert into Objects_references values(317, 19, 5);
 Insert into Parameters values(317, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*318*/
-Insert into Objects_references values(318, 35, 4);
+Insert into Objects_references values(318, 34, 4);
 Insert into Objects_references values(318, 12, 5);
 Insert into Objects_references values(318, 22, 5);
 Insert into Objects_references values(318, 6, 5);
 Insert into Objects_references values(318, 20, 5);
 Insert into Parameters values(318, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*319*/
-Insert into Objects_references values(319, 36, 4);
+Insert into Objects_references values(319, 35, 4);
 Insert into Objects_references values(319, 12, 5);
 Insert into Objects_references values(319, 22, 5);
 Insert into Objects_references values(319, 6, 5);
 Insert into Objects_references values(319, 20, 5);
 Insert into Parameters values(319, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*320*/
-Insert into Objects_references values(320, 34, 4);
+Insert into Objects_references values(320, 36, 4);
 Insert into Objects_references values(320, 12, 5);
 Insert into Objects_references values(320, 22, 5);
-Insert into Objects_references values(320, 7, 5);
-Insert into Objects_references values(320, 18, 5);
+Insert into Objects_references values(320, 6, 5);
+Insert into Objects_references values(320, 20, 5);
 Insert into Parameters values(320, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*321*/
-Insert into Objects_references values(321, 35, 4);
+Insert into Objects_references values(321, 34, 4);
 Insert into Objects_references values(321, 12, 5);
 Insert into Objects_references values(321, 22, 5);
 Insert into Objects_references values(321, 7, 5);
 Insert into Objects_references values(321, 18, 5);
 Insert into Parameters values(321, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*322*/
-Insert into Objects_references values(322, 36, 4);
+Insert into Objects_references values(322, 35, 4);
 Insert into Objects_references values(322, 12, 5);
 Insert into Objects_references values(322, 22, 5);
 Insert into Objects_references values(322, 7, 5);
 Insert into Objects_references values(322, 18, 5);
 Insert into Parameters values(322, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*323*/
-Insert into Objects_references values(323, 34, 4);
+Insert into Objects_references values(323, 36, 4);
 Insert into Objects_references values(323, 12, 5);
 Insert into Objects_references values(323, 22, 5);
 Insert into Objects_references values(323, 7, 5);
-Insert into Objects_references values(323, 19, 5);
+Insert into Objects_references values(323, 18, 5);
 Insert into Parameters values(323, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*324*/
-Insert into Objects_references values(324, 35, 4);
+Insert into Objects_references values(324, 34, 4);
 Insert into Objects_references values(324, 12, 5);
 Insert into Objects_references values(324, 22, 5);
 Insert into Objects_references values(324, 7, 5);
 Insert into Objects_references values(324, 19, 5);
 Insert into Parameters values(324, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*325*/
-Insert into Objects_references values(325, 36, 4);
+Insert into Objects_references values(325, 35, 4);
 Insert into Objects_references values(325, 12, 5);
 Insert into Objects_references values(325, 22, 5);
 Insert into Objects_references values(325, 7, 5);
 Insert into Objects_references values(325, 19, 5);
 Insert into Parameters values(325, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*326*/
-Insert into Objects_references values(326, 34, 4);
+Insert into Objects_references values(326, 36, 4);
 Insert into Objects_references values(326, 12, 5);
 Insert into Objects_references values(326, 22, 5);
 Insert into Objects_references values(326, 7, 5);
-Insert into Objects_references values(326, 20, 5);
+Insert into Objects_references values(326, 19, 5);
 Insert into Parameters values(326, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*327*/
-Insert into Objects_references values(327, 35, 4);
+Insert into Objects_references values(327, 34, 4);
 Insert into Objects_references values(327, 12, 5);
 Insert into Objects_references values(327, 22, 5);
 Insert into Objects_references values(327, 7, 5);
 Insert into Objects_references values(327, 20, 5);
 Insert into Parameters values(327, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*328*/
-Insert into Objects_references values(328, 36, 4);
+Insert into Objects_references values(328, 35, 4);
 Insert into Objects_references values(328, 12, 5);
 Insert into Objects_references values(328, 22, 5);
 Insert into Objects_references values(328, 7, 5);
 Insert into Objects_references values(328, 20, 5);
 Insert into Parameters values(328, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*329*/
-Insert into Objects_references values(329, 34, 4);
+Insert into Objects_references values(329, 36, 4);
 Insert into Objects_references values(329, 12, 5);
 Insert into Objects_references values(329, 22, 5);
-Insert into Objects_references values(329, 8, 5);
-Insert into Objects_references values(329, 18, 5);
+Insert into Objects_references values(329, 7, 5);
+Insert into Objects_references values(329, 20, 5);
 Insert into Parameters values(329, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*330*/
-Insert into Objects_references values(330, 35, 4);
+Insert into Objects_references values(330, 34, 4);
 Insert into Objects_references values(330, 12, 5);
 Insert into Objects_references values(330, 22, 5);
 Insert into Objects_references values(330, 8, 5);
 Insert into Objects_references values(330, 18, 5);
 Insert into Parameters values(330, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*331*/
-Insert into Objects_references values(331, 36, 4);
+Insert into Objects_references values(331, 35, 4);
 Insert into Objects_references values(331, 12, 5);
 Insert into Objects_references values(331, 22, 5);
 Insert into Objects_references values(331, 8, 5);
 Insert into Objects_references values(331, 18, 5);
 Insert into Parameters values(331, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*332*/
-Insert into Objects_references values(332, 34, 4);
+Insert into Objects_references values(332, 36, 4);
 Insert into Objects_references values(332, 12, 5);
 Insert into Objects_references values(332, 22, 5);
 Insert into Objects_references values(332, 8, 5);
-Insert into Objects_references values(332, 19, 5);
+Insert into Objects_references values(332, 18, 5);
 Insert into Parameters values(332, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*333*/
-Insert into Objects_references values(333, 35, 4);
+Insert into Objects_references values(333, 34, 4);
 Insert into Objects_references values(333, 12, 5);
 Insert into Objects_references values(333, 22, 5);
 Insert into Objects_references values(333, 8, 5);
 Insert into Objects_references values(333, 19, 5);
 Insert into Parameters values(333, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*334*/
-Insert into Objects_references values(334, 36, 4);
+Insert into Objects_references values(334, 35, 4);
 Insert into Objects_references values(334, 12, 5);
 Insert into Objects_references values(334, 22, 5);
 Insert into Objects_references values(334, 8, 5);
 Insert into Objects_references values(334, 19, 5);
 Insert into Parameters values(334, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*335*/
-Insert into Objects_references values(335, 34, 4);
+Insert into Objects_references values(335, 36, 4);
 Insert into Objects_references values(335, 12, 5);
 Insert into Objects_references values(335, 22, 5);
 Insert into Objects_references values(335, 8, 5);
-Insert into Objects_references values(335, 20, 5);
+Insert into Objects_references values(335, 19, 5);
 Insert into Parameters values(335, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*336*/
-Insert into Objects_references values(336, 35, 4);
+Insert into Objects_references values(336, 34, 4);
 Insert into Objects_references values(336, 12, 5);
 Insert into Objects_references values(336, 22, 5);
 Insert into Objects_references values(336, 8, 5);
 Insert into Objects_references values(336, 20, 5);
 Insert into Parameters values(336, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*337*/
-Insert into Objects_references values(337, 36, 4);
+Insert into Objects_references values(337, 35, 4);
 Insert into Objects_references values(337, 12, 5);
 Insert into Objects_references values(337, 22, 5);
 Insert into Objects_references values(337, 8, 5);
 Insert into Objects_references values(337, 20, 5);
 Insert into Parameters values(337, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*338*/
-Insert into Objects_references values(338, 34, 4);
+Insert into Objects_references values(338, 36, 4);
 Insert into Objects_references values(338, 12, 5);
-Insert into Objects_references values(338, 23, 5);
-Insert into Objects_references values(338, 6, 5);
-Insert into Objects_references values(338, 18, 5);
+Insert into Objects_references values(338, 22, 5);
+Insert into Objects_references values(338, 8, 5);
+Insert into Objects_references values(338, 20, 5);
 Insert into Parameters values(338, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*339*/
-Insert into Objects_references values(339, 35, 4);
+Insert into Objects_references values(339, 34, 4);
 Insert into Objects_references values(339, 12, 5);
 Insert into Objects_references values(339, 23, 5);
 Insert into Objects_references values(339, 6, 5);
 Insert into Objects_references values(339, 18, 5);
 Insert into Parameters values(339, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*340*/
-Insert into Objects_references values(340, 36, 4);
+Insert into Objects_references values(340, 35, 4);
 Insert into Objects_references values(340, 12, 5);
 Insert into Objects_references values(340, 23, 5);
 Insert into Objects_references values(340, 6, 5);
 Insert into Objects_references values(340, 18, 5);
 Insert into Parameters values(340, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*341*/
-Insert into Objects_references values(341, 34, 4);
+Insert into Objects_references values(341, 36, 4);
 Insert into Objects_references values(341, 12, 5);
 Insert into Objects_references values(341, 23, 5);
 Insert into Objects_references values(341, 6, 5);
-Insert into Objects_references values(341, 19, 5);
+Insert into Objects_references values(341, 18, 5);
 Insert into Parameters values(341, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*342*/
-Insert into Objects_references values(342, 35, 4);
+Insert into Objects_references values(342, 34, 4);
 Insert into Objects_references values(342, 12, 5);
 Insert into Objects_references values(342, 23, 5);
 Insert into Objects_references values(342, 6, 5);
 Insert into Objects_references values(342, 19, 5);
 Insert into Parameters values(342, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*343*/
-Insert into Objects_references values(343, 36, 4);
+Insert into Objects_references values(343, 35, 4);
 Insert into Objects_references values(343, 12, 5);
 Insert into Objects_references values(343, 23, 5);
 Insert into Objects_references values(343, 6, 5);
 Insert into Objects_references values(343, 19, 5);
 Insert into Parameters values(343, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*344*/
-Insert into Objects_references values(344, 34, 4);
+Insert into Objects_references values(344, 36, 4);
 Insert into Objects_references values(344, 12, 5);
 Insert into Objects_references values(344, 23, 5);
 Insert into Objects_references values(344, 6, 5);
-Insert into Objects_references values(344, 20, 5);
+Insert into Objects_references values(344, 19, 5);
 Insert into Parameters values(344, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*345*/
-Insert into Objects_references values(345, 35, 4);
+Insert into Objects_references values(345, 34, 4);
 Insert into Objects_references values(345, 12, 5);
 Insert into Objects_references values(345, 23, 5);
 Insert into Objects_references values(345, 6, 5);
 Insert into Objects_references values(345, 20, 5);
 Insert into Parameters values(345, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*346*/
-Insert into Objects_references values(346, 36, 4);
+Insert into Objects_references values(346, 35, 4);
 Insert into Objects_references values(346, 12, 5);
 Insert into Objects_references values(346, 23, 5);
 Insert into Objects_references values(346, 6, 5);
 Insert into Objects_references values(346, 20, 5);
 Insert into Parameters values(346, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*347*/
-Insert into Objects_references values(347, 34, 4);
+Insert into Objects_references values(347, 36, 4);
 Insert into Objects_references values(347, 12, 5);
 Insert into Objects_references values(347, 23, 5);
-Insert into Objects_references values(347, 7, 5);
-Insert into Objects_references values(347, 18, 5);
+Insert into Objects_references values(347, 6, 5);
+Insert into Objects_references values(347, 20, 5);
 Insert into Parameters values(347, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*348*/
-Insert into Objects_references values(348, 35, 4);
+Insert into Objects_references values(348, 34, 4);
 Insert into Objects_references values(348, 12, 5);
 Insert into Objects_references values(348, 23, 5);
 Insert into Objects_references values(348, 7, 5);
 Insert into Objects_references values(348, 18, 5);
 Insert into Parameters values(348, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*349*/
-Insert into Objects_references values(349, 36, 4);
+Insert into Objects_references values(349, 35, 4);
 Insert into Objects_references values(349, 12, 5);
 Insert into Objects_references values(349, 23, 5);
 Insert into Objects_references values(349, 7, 5);
 Insert into Objects_references values(349, 18, 5);
 Insert into Parameters values(349, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*350*/
-Insert into Objects_references values(350, 34, 4);
+Insert into Objects_references values(350, 36, 4);
 Insert into Objects_references values(350, 12, 5);
 Insert into Objects_references values(350, 23, 5);
 Insert into Objects_references values(350, 7, 5);
-Insert into Objects_references values(350, 19, 5);
+Insert into Objects_references values(350, 18, 5);
 Insert into Parameters values(350, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*351*/
-Insert into Objects_references values(351, 35, 4);
+Insert into Objects_references values(351, 34, 4);
 Insert into Objects_references values(351, 12, 5);
 Insert into Objects_references values(351, 23, 5);
 Insert into Objects_references values(351, 7, 5);
 Insert into Objects_references values(351, 19, 5);
 Insert into Parameters values(351, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*352*/
-Insert into Objects_references values(352, 36, 4);
+Insert into Objects_references values(352, 35, 4);
 Insert into Objects_references values(352, 12, 5);
 Insert into Objects_references values(352, 23, 5);
 Insert into Objects_references values(352, 7, 5);
 Insert into Objects_references values(352, 19, 5);
 Insert into Parameters values(352, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*353*/
-Insert into Objects_references values(353, 34, 4);
+Insert into Objects_references values(353, 36, 4);
 Insert into Objects_references values(353, 12, 5);
 Insert into Objects_references values(353, 23, 5);
 Insert into Objects_references values(353, 7, 5);
-Insert into Objects_references values(353, 20, 5);
+Insert into Objects_references values(353, 19, 5);
 Insert into Parameters values(353, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*354*/
-Insert into Objects_references values(354, 35, 4);
+Insert into Objects_references values(354, 34, 4);
 Insert into Objects_references values(354, 12, 5);
 Insert into Objects_references values(354, 23, 5);
 Insert into Objects_references values(354, 7, 5);
 Insert into Objects_references values(354, 20, 5);
 Insert into Parameters values(354, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*355*/
-Insert into Objects_references values(355, 36, 4);
+Insert into Objects_references values(355, 35, 4);
 Insert into Objects_references values(355, 12, 5);
 Insert into Objects_references values(355, 23, 5);
 Insert into Objects_references values(355, 7, 5);
 Insert into Objects_references values(355, 20, 5);
 Insert into Parameters values(355, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*356*/
-Insert into Objects_references values(356, 34, 4);
+Insert into Objects_references values(356, 36, 4);
 Insert into Objects_references values(356, 12, 5);
 Insert into Objects_references values(356, 23, 5);
-Insert into Objects_references values(356, 8, 5);
-Insert into Objects_references values(356, 18, 5);
+Insert into Objects_references values(356, 7, 5);
+Insert into Objects_references values(356, 20, 5);
 Insert into Parameters values(356, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*357*/
-Insert into Objects_references values(357, 35, 4);
+Insert into Objects_references values(357, 34, 4);
 Insert into Objects_references values(357, 12, 5);
 Insert into Objects_references values(357, 23, 5);
 Insert into Objects_references values(357, 8, 5);
 Insert into Objects_references values(357, 18, 5);
 Insert into Parameters values(357, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*358*/
-Insert into Objects_references values(358, 36, 4);
+Insert into Objects_references values(358, 35, 4);
 Insert into Objects_references values(358, 12, 5);
 Insert into Objects_references values(358, 23, 5);
 Insert into Objects_references values(358, 8, 5);
 Insert into Objects_references values(358, 18, 5);
 Insert into Parameters values(358, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*359*/
-Insert into Objects_references values(359, 34, 4);
+Insert into Objects_references values(359, 36, 4);
 Insert into Objects_references values(359, 12, 5);
 Insert into Objects_references values(359, 23, 5);
 Insert into Objects_references values(359, 8, 5);
-Insert into Objects_references values(359, 19, 5);
+Insert into Objects_references values(359, 18, 5);
 Insert into Parameters values(359, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*360*/
-Insert into Objects_references values(360, 35, 4);
+Insert into Objects_references values(360, 34, 4);
 Insert into Objects_references values(360, 12, 5);
 Insert into Objects_references values(360, 23, 5);
 Insert into Objects_references values(360, 8, 5);
 Insert into Objects_references values(360, 19, 5);
 Insert into Parameters values(360, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*361*/
-Insert into Objects_references values(361, 36, 4);
+Insert into Objects_references values(361, 35, 4);
 Insert into Objects_references values(361, 12, 5);
 Insert into Objects_references values(361, 23, 5);
 Insert into Objects_references values(361, 8, 5);
 Insert into Objects_references values(361, 19, 5);
 Insert into Parameters values(361, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*362*/
-Insert into Objects_references values(362, 34, 4);
+Insert into Objects_references values(362, 36, 4);
 Insert into Objects_references values(362, 12, 5);
 Insert into Objects_references values(362, 23, 5);
 Insert into Objects_references values(362, 8, 5);
-Insert into Objects_references values(362, 20, 5);
+Insert into Objects_references values(362, 19, 5);
 Insert into Parameters values(362, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*363*/
-Insert into Objects_references values(363, 35, 4);
+Insert into Objects_references values(363, 34, 4);
 Insert into Objects_references values(363, 12, 5);
 Insert into Objects_references values(363, 23, 5);
 Insert into Objects_references values(363, 8, 5);
 Insert into Objects_references values(363, 20, 5);
 Insert into Parameters values(363, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*364*/
-Insert into Objects_references values(364, 36, 4);
+Insert into Objects_references values(364, 35, 4);
 Insert into Objects_references values(364, 12, 5);
 Insert into Objects_references values(364, 23, 5);
 Insert into Objects_references values(364, 8, 5);
 Insert into Objects_references values(364, 20, 5);
 Insert into Parameters values(364, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*365*/
-Insert into Objects_references values(365, 34, 4);
+Insert into Objects_references values(365, 36, 4);
 Insert into Objects_references values(365, 12, 5);
-Insert into Objects_references values(365, 24, 5);
-Insert into Objects_references values(365, 6, 5);
-Insert into Objects_references values(365, 18, 5);
+Insert into Objects_references values(365, 23, 5);
+Insert into Objects_references values(365, 8, 5);
+Insert into Objects_references values(365, 20, 5);
 Insert into Parameters values(365, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*366*/
-Insert into Objects_references values(366, 35, 4);
+Insert into Objects_references values(366, 34, 4);
 Insert into Objects_references values(366, 12, 5);
 Insert into Objects_references values(366, 24, 5);
 Insert into Objects_references values(366, 6, 5);
 Insert into Objects_references values(366, 18, 5);
 Insert into Parameters values(366, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*367*/
-Insert into Objects_references values(367, 36, 4);
+Insert into Objects_references values(367, 35, 4);
 Insert into Objects_references values(367, 12, 5);
 Insert into Objects_references values(367, 24, 5);
 Insert into Objects_references values(367, 6, 5);
 Insert into Objects_references values(367, 18, 5);
 Insert into Parameters values(367, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*368*/
-Insert into Objects_references values(368, 34, 4);
+Insert into Objects_references values(368, 36, 4);
 Insert into Objects_references values(368, 12, 5);
 Insert into Objects_references values(368, 24, 5);
 Insert into Objects_references values(368, 6, 5);
-Insert into Objects_references values(368, 19, 5);
+Insert into Objects_references values(368, 18, 5);
 Insert into Parameters values(368, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*369*/
-Insert into Objects_references values(369, 35, 4);
+Insert into Objects_references values(369, 34, 4);
 Insert into Objects_references values(369, 12, 5);
 Insert into Objects_references values(369, 24, 5);
 Insert into Objects_references values(369, 6, 5);
 Insert into Objects_references values(369, 19, 5);
 Insert into Parameters values(369, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*370*/
-Insert into Objects_references values(370, 36, 4);
+Insert into Objects_references values(370, 35, 4);
 Insert into Objects_references values(370, 12, 5);
 Insert into Objects_references values(370, 24, 5);
 Insert into Objects_references values(370, 6, 5);
 Insert into Objects_references values(370, 19, 5);
 Insert into Parameters values(370, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*371*/
-Insert into Objects_references values(371, 34, 4);
+Insert into Objects_references values(371, 36, 4);
 Insert into Objects_references values(371, 12, 5);
 Insert into Objects_references values(371, 24, 5);
 Insert into Objects_references values(371, 6, 5);
-Insert into Objects_references values(371, 20, 5);
+Insert into Objects_references values(371, 19, 5);
 Insert into Parameters values(371, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*372*/
-Insert into Objects_references values(372, 35, 4);
+Insert into Objects_references values(372, 34, 4);
 Insert into Objects_references values(372, 12, 5);
 Insert into Objects_references values(372, 24, 5);
 Insert into Objects_references values(372, 6, 5);
 Insert into Objects_references values(372, 20, 5);
 Insert into Parameters values(372, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*373*/
-Insert into Objects_references values(373, 36, 4);
+Insert into Objects_references values(373, 35, 4);
 Insert into Objects_references values(373, 12, 5);
 Insert into Objects_references values(373, 24, 5);
 Insert into Objects_references values(373, 6, 5);
 Insert into Objects_references values(373, 20, 5);
 Insert into Parameters values(373, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*374*/
-Insert into Objects_references values(374, 34, 4);
+Insert into Objects_references values(374, 36, 4);
 Insert into Objects_references values(374, 12, 5);
 Insert into Objects_references values(374, 24, 5);
-Insert into Objects_references values(374, 7, 5);
-Insert into Objects_references values(374, 18, 5);
+Insert into Objects_references values(374, 6, 5);
+Insert into Objects_references values(374, 20, 5);
 Insert into Parameters values(374, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*375*/
-Insert into Objects_references values(375, 35, 4);
+Insert into Objects_references values(375, 34, 4);
 Insert into Objects_references values(375, 12, 5);
 Insert into Objects_references values(375, 24, 5);
 Insert into Objects_references values(375, 7, 5);
 Insert into Objects_references values(375, 18, 5);
 Insert into Parameters values(375, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*376*/
-Insert into Objects_references values(376, 36, 4);
+Insert into Objects_references values(376, 35, 4);
 Insert into Objects_references values(376, 12, 5);
 Insert into Objects_references values(376, 24, 5);
 Insert into Objects_references values(376, 7, 5);
 Insert into Objects_references values(376, 18, 5);
 Insert into Parameters values(376, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*377*/
-Insert into Objects_references values(377, 34, 4);
+Insert into Objects_references values(377, 36, 4);
 Insert into Objects_references values(377, 12, 5);
 Insert into Objects_references values(377, 24, 5);
 Insert into Objects_references values(377, 7, 5);
-Insert into Objects_references values(377, 19, 5);
+Insert into Objects_references values(377, 18, 5);
 Insert into Parameters values(377, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*378*/
-Insert into Objects_references values(378, 35, 4);
+Insert into Objects_references values(378, 34, 4);
 Insert into Objects_references values(378, 12, 5);
 Insert into Objects_references values(378, 24, 5);
 Insert into Objects_references values(378, 7, 5);
 Insert into Objects_references values(378, 19, 5);
 Insert into Parameters values(378, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*379*/
-Insert into Objects_references values(379, 36, 4);
+Insert into Objects_references values(379, 35, 4);
 Insert into Objects_references values(379, 12, 5);
 Insert into Objects_references values(379, 24, 5);
 Insert into Objects_references values(379, 7, 5);
 Insert into Objects_references values(379, 19, 5);
 Insert into Parameters values(379, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*380*/
-Insert into Objects_references values(380, 34, 4);
+Insert into Objects_references values(380, 36, 4);
 Insert into Objects_references values(380, 12, 5);
 Insert into Objects_references values(380, 24, 5);
 Insert into Objects_references values(380, 7, 5);
-Insert into Objects_references values(380, 20, 5);
+Insert into Objects_references values(380, 19, 5);
 Insert into Parameters values(380, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*381*/
-Insert into Objects_references values(381, 35, 4);
+Insert into Objects_references values(381, 34, 4);
 Insert into Objects_references values(381, 12, 5);
 Insert into Objects_references values(381, 24, 5);
 Insert into Objects_references values(381, 7, 5);
 Insert into Objects_references values(381, 20, 5);
 Insert into Parameters values(381, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*382*/
-Insert into Objects_references values(382, 36, 4);
+Insert into Objects_references values(382, 35, 4);
 Insert into Objects_references values(382, 12, 5);
 Insert into Objects_references values(382, 24, 5);
 Insert into Objects_references values(382, 7, 5);
 Insert into Objects_references values(382, 20, 5);
 Insert into Parameters values(382, 6, '0.33');
-
-
 Insert into Objects values(null, 'Probability');/*383*/
-Insert into Objects_references values(383, 34, 4);
+Insert into Objects_references values(383, 36, 4);
 Insert into Objects_references values(383, 12, 5);
 Insert into Objects_references values(383, 24, 5);
-Insert into Objects_references values(383, 8, 5);
-Insert into Objects_references values(383, 18, 5);
+Insert into Objects_references values(383, 7, 5);
+Insert into Objects_references values(383, 20, 5);
 Insert into Parameters values(383, 6, '0.33');
+
+
 Insert into Objects values(null, 'Probability');/*384*/
-Insert into Objects_references values(384, 35, 4);
+Insert into Objects_references values(384, 34, 4);
 Insert into Objects_references values(384, 12, 5);
 Insert into Objects_references values(384, 24, 5);
 Insert into Objects_references values(384, 8, 5);
 Insert into Objects_references values(384, 18, 5);
 Insert into Parameters values(384, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*385*/
-Insert into Objects_references values(385, 36, 4);
+Insert into Objects_references values(385, 35, 4);
 Insert into Objects_references values(385, 12, 5);
 Insert into Objects_references values(385, 24, 5);
 Insert into Objects_references values(385, 8, 5);
 Insert into Objects_references values(385, 18, 5);
 Insert into Parameters values(385, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*386*/
-Insert into Objects_references values(386, 34, 4);
+Insert into Objects_references values(386, 36, 4);
 Insert into Objects_references values(386, 12, 5);
 Insert into Objects_references values(386, 24, 5);
 Insert into Objects_references values(386, 8, 5);
-Insert into Objects_references values(386, 19, 5);
+Insert into Objects_references values(386, 18, 5);
 Insert into Parameters values(386, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*387*/
-Insert into Objects_references values(387, 35, 4);
+Insert into Objects_references values(387, 34, 4);
 Insert into Objects_references values(387, 12, 5);
 Insert into Objects_references values(387, 24, 5);
 Insert into Objects_references values(387, 8, 5);
 Insert into Objects_references values(387, 19, 5);
 Insert into Parameters values(387, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*388*/
-Insert into Objects_references values(388, 36, 4);
+Insert into Objects_references values(388, 35, 4);
 Insert into Objects_references values(388, 12, 5);
 Insert into Objects_references values(388, 24, 5);
 Insert into Objects_references values(388, 8, 5);
 Insert into Objects_references values(388, 19, 5);
 Insert into Parameters values(388, 6, '0.33');
-
 Insert into Objects values(null, 'Probability');/*389*/
-Insert into Objects_references values(389, 34, 4);
+Insert into Objects_references values(389, 36, 4);
 Insert into Objects_references values(389, 12, 5);
 Insert into Objects_references values(389, 24, 5);
 Insert into Objects_references values(389, 8, 5);
-Insert into Objects_references values(389, 20, 5);
+Insert into Objects_references values(389, 19, 5);
 Insert into Parameters values(389, 6, '0.33');
+
 Insert into Objects values(null, 'Probability');/*390*/
-Insert into Objects_references values(390, 35, 4);
+Insert into Objects_references values(390, 34, 4);
 Insert into Objects_references values(390, 12, 5);
 Insert into Objects_references values(390, 24, 5);
 Insert into Objects_references values(390, 8, 5);
 Insert into Objects_references values(390, 20, 5);
 Insert into Parameters values(390, 6, '0.33');
 Insert into Objects values(null, 'Probability');/*391*/
-Insert into Objects_references values(391, 36, 4);
+Insert into Objects_references values(391, 35, 4);
 Insert into Objects_references values(391, 12, 5);
 Insert into Objects_references values(391, 24, 5);
 Insert into Objects_references values(391, 8, 5);
 Insert into Objects_references values(391, 20, 5);
 Insert into Parameters values(391, 6, '0.33');
+Insert into Objects values(null, 'Probability');/*392*/
+Insert into Objects_references values(392, 36, 4);
+Insert into Objects_references values(392, 12, 5);
+Insert into Objects_references values(392, 24, 5);
+Insert into Objects_references values(392, 8, 5);
+Insert into Objects_references values(392, 20, 5);
+Insert into Parameters values(392, 6, '0.33');

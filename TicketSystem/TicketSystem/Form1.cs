@@ -11,7 +11,10 @@ using System.Windows.Forms;
 using TicketSystem.CommonComponents.DataConverters.Realization.DS;
 using TicketSystem.CommonComponents.InitialyzerComponent;
 using TicketSystem.CommonComponents.WorkWithDataBase.SqlLite;
+using TicketSystem.CommonComponents.WorkWithFiles.Load;
 using TicketSystem.CommonComponents.WorkWithFiles.Save;
+using TicketSystem.TSystem;
+using TicketSystem.TSystem.Objects;
 
 namespace TicketSystem
 {
@@ -25,16 +28,66 @@ namespace TicketSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            testcalc();
         }
+
 
 
         //
         //Functions
         //
 
+        private void a()
+        {
+            TextFilesDataLoader loader = new TextFilesDataLoader();
+            TextFilesConfigFieldsOnLoad conf = new TextFilesConfigFieldsOnLoad(
+                Directory.GetCurrentDirectory() + "\\1.txt");
+            loader.setConfig(conf);
+            loader.execute();
 
+            List<string> buf = loader.getResult();
+            int start = 71;
+            for(int i=0; i<buf.Count; i++)
+            {
+                if(buf.ElementAt(i).Contains("Insert into Objects values(null, 'Probability');"))
+                {
+                    start++;
+                }
+                int value = start - 1;
+                string line = buf.ElementAt(i).Replace(value.ToString(), start.ToString());
+                buf.RemoveAt(i);
+                buf.Insert(i, line);
+            }
+
+            TextFilesDataSaver ds = new TextFilesDataSaver();
+            TextFilesConfigFieldsOnSave conf2 = new TextFilesConfigFieldsOnSave(
+                buf, Directory.GetCurrentDirectory() + "\\2.txt", 1);
+            ds.setConfig(conf2);
+            ds.execute();
+        }
         
+        private void testcalc()
+        {
+            Model model = new Model();
+            model.calcNodesItemsValues();
+            TextFilesDataSaver ds = new TextFilesDataSaver();
+            List<string> data = new List<string>();
+            for (int i = 0; i < model.getNodes().Length; i++)
+            {
+                Node current = model.getNodes()[i];
+                data.Add(current.getName());
+                for (int k = 0; k < current.Items.Length; k++)
+                {
+                    data.Add(current.Items[k].Value.ToString());
+                }
+                data.Add("--------------------------");
+            }
+            TextFilesConfigFieldsOnSave conf = new TextFilesConfigFieldsOnSave(
+                data, Directory.GetCurrentDirectory() + "\\test.txt", 1);
+            ds.setConfig(conf);
+            ds.execute();
+        }
+
         private void createquerys()
         {
             TextFilesDataSaver ds = new TextFilesDataSaver();

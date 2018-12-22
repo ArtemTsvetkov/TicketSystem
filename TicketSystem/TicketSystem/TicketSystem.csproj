@@ -88,6 +88,8 @@
     <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteDataWorker.cs" />
     <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteSimpleExecute.cs" />
     <Compile Include="CommonComponents\WorkWithDataBase\SqlLite\SqlLiteStateFields.cs" />
+    <Compile Include="CommonComponents\WorkWithFiles\Load\TextFilesConfigFieldsOnLoad.cs" />
+    <Compile Include="CommonComponents\WorkWithFiles\Load\TextFilesDataLoader.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\ReadWriteTextFile.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\Save\TextFilesConfigFieldsOnSave.cs" />
     <Compile Include="CommonComponents\WorkWithFiles\Save\TextFilesDataSaver.cs" />
@@ -99,6 +101,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TSystem\Exceptions\ParentNodeMustBeCalcFirst.cs" />
+    <Compile Include="TSystem\Model.cs" />
+    <Compile Include="TSystem\Objects\Node.cs" />
+    <Compile Include="TSystem\Objects\NodeItem.cs" />
+    <Compile Include="TSystem\Objects\Probability.cs" />
+    <Compile Include="TSystem\QueryConfigurator.cs" />
+    <Compile Include="TSystem\Workers\NodeIdsStore.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
