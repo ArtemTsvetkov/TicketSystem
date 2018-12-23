@@ -25,17 +25,223 @@ namespace TicketSystem
         {
             InitializeComponent();
             ConfigReader.getInstance().read();
+            addRows();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            exampleUpdateNodes();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+
+        //
+        //Functions
+        //
+
+        private void addRows()
+        {
+            dataGridView1.Rows.Add(3);
+            dataGridView1.Rows[0].Cells[0].Value = "Маленькая";
+            dataGridView1.Rows[1].Cells[0].Value = "Средняя";
+            dataGridView1.Rows[2].Cells[0].Value = "Большая";
+            dataGridView1.Rows[0].Cells[1].Value = "0.5";
+            dataGridView1.Rows[1].Cells[1].Value = "0.3";
+            dataGridView1.Rows[2].Cells[1].Value = "0.2";
+            dataGridView1.Rows[0].Cells[2].Value = "0.4";
+            dataGridView1.Rows[1].Cells[2].Value = "0.4";
+            dataGridView1.Rows[2].Cells[2].Value = "0.2";
+            dataGridView1.Rows[0].Cells[3].Value = "0.2";
+            dataGridView1.Rows[1].Cells[3].Value = "0.3";
+            dataGridView1.Rows[2].Cells[3].Value = "0.5";
+
+            dataGridView2.Rows.Add(3);
+            dataGridView2.Rows[0].Cells[0].Value = "Маленькая";
+            dataGridView2.Rows[1].Cells[0].Value = "Средняя";
+            dataGridView2.Rows[2].Cells[0].Value = "Большая";
+            dataGridView2.Rows[0].Cells[1].Value = "0.3";
+            dataGridView2.Rows[1].Cells[1].Value = "0.4";
+            dataGridView2.Rows[2].Cells[1].Value = "0.3";
+
+            dataGridView3.Rows.Add(3);
+            dataGridView3.Rows[0].Cells[0].Value = "Маленькая";
+            dataGridView3.Rows[1].Cells[0].Value = "Средняя";
+            dataGridView3.Rows[2].Cells[0].Value = "Большая";
+            dataGridView3.Rows[0].Cells[1].Value = "0.4";
+            dataGridView3.Rows[1].Cells[1].Value = "0.4";
+            dataGridView3.Rows[2].Cells[1].Value = "0.2";
+
+            dataGridView4.Rows.Add(3);
+            dataGridView4.Rows[0].Cells[0].Value = "Низкая";
+            dataGridView4.Rows[1].Cells[0].Value = "Средняя";
+            dataGridView4.Rows[2].Cells[0].Value = "Высокая";
+            dataGridView4.Rows[0].Cells[1].Value = "0.2";
+            dataGridView4.Rows[1].Cells[1].Value = "0.5";
+            dataGridView4.Rows[2].Cells[1].Value = "0.3";
+
+            dataGridView5.Rows.Add(3);
+            dataGridView5.Rows[0].Cells[0].Value = "Свободен";
+            dataGridView5.Rows[1].Cells[0].Value = "Достаточно";
+            dataGridView5.Rows[2].Cells[0].Value = "Занят";
+            dataGridView5.Rows[0].Cells[1].Value = "0.3";
+            dataGridView5.Rows[1].Cells[1].Value = "0.6";
+            dataGridView5.Rows[2].Cells[1].Value = "0.1";
+
+            dataGridView6.Rows.Add(3);
+            dataGridView6.Rows[0].Cells[0].Value = "Junior";
+            dataGridView6.Rows[1].Cells[0].Value = "Middle";
+            dataGridView6.Rows[2].Cells[0].Value = "Senior";
+            dataGridView6.Rows[0].Cells[1].Value = "0.5";
+            dataGridView6.Rows[1].Cells[1].Value = "0.3";
+            dataGridView6.Rows[2].Cells[1].Value = "0.2";
+
+            dataGridView7.Rows.Add(4);
+            dataGridView7.Rows[0].Cells[0].Value = "Степень загрузки задачами";
+            dataGridView7.Rows[1].Cells[0].Value = "Низкая";
+            dataGridView7.Rows[2].Cells[0].Value = "Средняя";
+            dataGridView7.Rows[3].Cells[0].Value = "Высокая";
+            dataGridView7.Rows[0].Cells[1].Value = "Низкая";
+            dataGridView7.Rows[0].Cells[2].Value = "Средняя";
+            dataGridView7.Rows[0].Cells[3].Value = "Высокая";
+            dataGridView7.Rows[0].Cells[4].Value = "Низкая";
+            dataGridView7.Rows[0].Cells[5].Value = "Средняя";
+            dataGridView7.Rows[0].Cells[6].Value = "Высокая";
+            dataGridView7.Rows[0].Cells[7].Value = "Низкая";
+            dataGridView7.Rows[0].Cells[8].Value = "Средняя";
+            dataGridView7.Rows[0].Cells[9].Value = "Высокая";
+            dataGridView7.Rows[1].Cells[1].Value = "0.8";
+            dataGridView7.Rows[2].Cells[1].Value = "0.1";
+            dataGridView7.Rows[3].Cells[1].Value = "0.1";
+            dataGridView7.Rows[1].Cells[2].Value = "0.7";
+            dataGridView7.Rows[2].Cells[2].Value = "0.2";
+            dataGridView7.Rows[3].Cells[2].Value = "0.1";
+            dataGridView7.Rows[1].Cells[3].Value = "0.6";
+            dataGridView7.Rows[2].Cells[3].Value = "0.2";
+            dataGridView7.Rows[3].Cells[3].Value = "0.2";
+            dataGridView7.Rows[1].Cells[4].Value = "0.7";
+            dataGridView7.Rows[2].Cells[4].Value = "0.2";
+            dataGridView7.Rows[3].Cells[4].Value = "0.1";
+            dataGridView7.Rows[1].Cells[5].Value = "0.3";
+            dataGridView7.Rows[2].Cells[5].Value = "0.4";
+            dataGridView7.Rows[3].Cells[5].Value = "0.3";
+            dataGridView7.Rows[1].Cells[6].Value = "0.3";
+            dataGridView7.Rows[2].Cells[6].Value = "0.3";
+            dataGridView7.Rows[3].Cells[6].Value = "0.4";
+            dataGridView7.Rows[1].Cells[7].Value = "0.6";
+            dataGridView7.Rows[2].Cells[7].Value = "0.2";
+            dataGridView7.Rows[3].Cells[7].Value = "0.2";
+            dataGridView7.Rows[1].Cells[8].Value = "0.3";
+            dataGridView7.Rows[2].Cells[8].Value = "0.3";
+            dataGridView7.Rows[3].Cells[8].Value = "0.4";
+            dataGridView7.Rows[1].Cells[9].Value = "0.1";
+            dataGridView7.Rows[2].Cells[9].Value = "0.1";
+            dataGridView7.Rows[3].Cells[9].Value = "0.8";
+
+            dataGridView8.Rows.Add(4);
+            dataGridView8.Rows[0].Cells[0].Value = "Заработная плата";
+            dataGridView8.Rows[1].Cells[0].Value = "Низкая";
+            dataGridView8.Rows[2].Cells[0].Value = "Средняя";
+            dataGridView8.Rows[3].Cells[0].Value = "Высокая";
+            dataGridView8.Rows[0].Cells[1].Value = "Низкая";
+            dataGridView8.Rows[0].Cells[2].Value = "Средняя";
+            dataGridView8.Rows[0].Cells[3].Value = "Высокая";
+            dataGridView8.Rows[0].Cells[4].Value = "Низкая";
+            dataGridView8.Rows[0].Cells[5].Value = "Средняя";
+            dataGridView8.Rows[0].Cells[6].Value = "Высокая";
+            dataGridView8.Rows[0].Cells[7].Value = "Низкая";
+            dataGridView8.Rows[0].Cells[8].Value = "Средняя";
+            dataGridView8.Rows[0].Cells[9].Value = "Высокая";
+            dataGridView8.Rows[1].Cells[1].Value = "0.5";
+            dataGridView8.Rows[2].Cells[1].Value = "0.3";
+            dataGridView8.Rows[3].Cells[1].Value = "0.2";
+            dataGridView8.Rows[1].Cells[2].Value = "0.4";
+            dataGridView8.Rows[2].Cells[2].Value = "0.4";
+            dataGridView8.Rows[3].Cells[2].Value = "0.2";
+            dataGridView8.Rows[1].Cells[3].Value = "0.3";
+            dataGridView8.Rows[2].Cells[3].Value = "0.4";
+            dataGridView8.Rows[3].Cells[3].Value = "0.3";
+            dataGridView8.Rows[1].Cells[4].Value = "0.6";
+            dataGridView8.Rows[2].Cells[4].Value = "0.3";
+            dataGridView8.Rows[3].Cells[4].Value = "0.1";
+            dataGridView8.Rows[1].Cells[5].Value = "0.5";
+            dataGridView8.Rows[2].Cells[5].Value = "0.3";
+            dataGridView8.Rows[3].Cells[5].Value = "0.2";
+            dataGridView8.Rows[1].Cells[6].Value = "0.4";
+            dataGridView8.Rows[2].Cells[6].Value = "0.4";
+            dataGridView8.Rows[3].Cells[6].Value = "0.2";
+            dataGridView8.Rows[1].Cells[7].Value = "0.7";
+            dataGridView8.Rows[2].Cells[7].Value = "0.2";
+            dataGridView8.Rows[3].Cells[7].Value = "0.1";
+            dataGridView8.Rows[1].Cells[8].Value = "0.6";
+            dataGridView8.Rows[2].Cells[8].Value = "0.3";
+            dataGridView8.Rows[3].Cells[8].Value = "0.1";
+            dataGridView8.Rows[1].Cells[9].Value = "0.5";
+            dataGridView8.Rows[2].Cells[9].Value = "0.3";
+            dataGridView8.Rows[3].Cells[9].Value = "0.2";
+
+            dataGridView9.Rows.Add(4);
+            dataGridView9.Rows[0].Cells[0].Value = "Мотивация выполнить задачу";
+            dataGridView9.Rows[1].Cells[0].Value = "Низкая";
+            dataGridView9.Rows[2].Cells[0].Value = "Средняя";
+            dataGridView9.Rows[3].Cells[0].Value = "Высокая";
+            dataGridView9.Rows[0].Cells[1].Value = "Низкая";
+            dataGridView9.Rows[0].Cells[2].Value = "Средняя";
+            dataGridView9.Rows[0].Cells[3].Value = "Высокая";
+            dataGridView9.Rows[0].Cells[4].Value = "Низкая";
+            dataGridView9.Rows[0].Cells[5].Value = "Средняя";
+            dataGridView9.Rows[0].Cells[6].Value = "Высокая";
+            dataGridView9.Rows[0].Cells[7].Value = "Низкая";
+            dataGridView9.Rows[0].Cells[8].Value = "Средняя";
+            dataGridView9.Rows[0].Cells[9].Value = "Высокая";
+            dataGridView9.Rows[1].Cells[1].Value = "0.7";
+            dataGridView9.Rows[2].Cells[1].Value = "0.2";
+            dataGridView9.Rows[3].Cells[1].Value = "0.1";
+            dataGridView9.Rows[1].Cells[2].Value = "0.65";
+            dataGridView9.Rows[2].Cells[2].Value = "0.25";
+            dataGridView9.Rows[3].Cells[2].Value = "0.1";
+            dataGridView9.Rows[1].Cells[3].Value = "0.6";
+            dataGridView9.Rows[2].Cells[3].Value = "0.25";
+            dataGridView9.Rows[3].Cells[3].Value = "0.15";
+            dataGridView9.Rows[1].Cells[4].Value = "0.6";
+            dataGridView9.Rows[2].Cells[4].Value = "0.2";
+            dataGridView9.Rows[3].Cells[4].Value = "0.2";
+            dataGridView9.Rows[1].Cells[5].Value = "0.55";
+            dataGridView9.Rows[2].Cells[5].Value = "0.25";
+            dataGridView9.Rows[3].Cells[5].Value = "0.2";
+            dataGridView9.Rows[1].Cells[6].Value = "0.5";
+            dataGridView9.Rows[2].Cells[6].Value = "0.25";
+            dataGridView9.Rows[3].Cells[6].Value = "0.25";
+            dataGridView9.Rows[1].Cells[7].Value = "0.5";
+            dataGridView9.Rows[2].Cells[7].Value = "0.3";
+            dataGridView9.Rows[3].Cells[7].Value = "0.2";
+            dataGridView9.Rows[1].Cells[8].Value = "0.4";
+            dataGridView9.Rows[2].Cells[8].Value = "0.3";
+            dataGridView9.Rows[3].Cells[8].Value = "0.3";
+            dataGridView9.Rows[1].Cells[9].Value = "0.3";
+            dataGridView9.Rows[2].Cells[9].Value = "0.3";
+            dataGridView9.Rows[3].Cells[9].Value = "0.4";
+
+            dataGridView10.Rows.Add(6);
+            dataGridView10.Rows[0].Cells[0].Value = "Уровень професиилнальной подготовки";
+            dataGridView10.Rows[1].Cells[0].Value = "Наличие свободного времени";
+            dataGridView10.Rows[2].Cells[0].Value = "Степень усталости";
+            dataGridView10.Rows[3].Cells[0].Value = "Недостаток";
+            dataGridView10.Rows[4].Cells[0].Value = "Удовлетворительно";
+            dataGridView10.Rows[5].Cells[0].Value = "Достаточно";
+        }
+        
+        private void exampleUpdateNodes()
         {
             Model model = new Model();
             testcalc(model);
             int zp = 0;
             int tasks = 0;
-            for(int i=0; i<model.getNodes().Length; i++)
+            for (int i = 0; i < model.getNodes().Length; i++)
             {
-                if(model.getNodes()[i].getName().Equals("Salary"))
+                if (model.getNodes()[i].getName().Equals("Salary"))
                 {
                     zp = i;
                 }
@@ -45,40 +251,34 @@ namespace TicketSystem
                 }
             }
             model.getNodes()[zp].Items[0].Value = 0;
-            model.getNodes()[zp].Items[1].Value = 100;
+            model.getNodes()[zp].Items[1].Value = 1;
             model.getNodes()[zp].Items[2].Value = 0;
             model.getNodes()[tasks].Items[0].Value = 0;
-            model.getNodes()[tasks].Items[1].Value = 100;
+            model.getNodes()[tasks].Items[1].Value = 1;
             model.getNodes()[tasks].Items[2].Value = 0;
 
             for (int i = 0; i < model.getConnects().Length; i++)
             {
-                if(model.getConnects()[i].getFrom().getId()==model.getNodes()[zp].getId())
+                if (model.getConnects()[i].getFrom().getId() == model.getNodes()[zp].getId())
                 {
-                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
+                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
                 }
                 if (model.getConnects()[i].getTo().getId() == model.getNodes()[zp].getId())
                 {
-                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
+                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
                 }
                 if (model.getConnects()[i].getFrom().getId() == model.getNodes()[tasks].getId())
                 {
-                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
+                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
                 }
                 if (model.getConnects()[i].getTo().getId() == model.getNodes()[tasks].getId())
                 {
-                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
+                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
                 }
             }
             model.updateNodes();
         }
-
-
-
-        //
-        //Functions
-        //
-
+        
         private void a()
         {
             TextFilesDataLoader loader = new TextFilesDataLoader();

@@ -39,6 +39,25 @@ namespace TicketSystem.TSystem.Objects
             return id;
         }
 
+        public int[] getProbabilitiesIndexes(List<Probability> probabilitys)
+        {
+            List<int> resList = new List<int>();
+            for (int i=0; i<probabilitys.Count; i++)
+            {
+                if(probabilitys.ElementAt(i).CurrentItemId==id)
+                {
+                    resList.Add(i);
+                }
+            }
+            int[] result = new int[resList.Count];
+            for(int i = 0; i < result.Length; i++)
+            {
+                result[i] = resList.ElementAt(i);
+            }
+
+            return result;
+        }
+
         private void load()
         {
             name = DataSetConverter.fromDsToSingle.toString.convert(
