@@ -225,12 +225,112 @@ namespace TicketSystem
             dataGridView9.Rows[3].Cells[9].Value = "0.4";
 
             dataGridView10.Rows.Add(6);
-            dataGridView10.Rows[0].Cells[0].Value = "Уровень професиилнальной подготовки";
+            dataGridView10.Rows[0].Cells[0].Value = "Уровень професcиональной подготовки";
             dataGridView10.Rows[1].Cells[0].Value = "Наличие свободного времени";
             dataGridView10.Rows[2].Cells[0].Value = "Степень усталости";
             dataGridView10.Rows[3].Cells[0].Value = "Недостаток";
             dataGridView10.Rows[4].Cells[0].Value = "Удовлетворительно";
             dataGridView10.Rows[5].Cells[0].Value = "Достаточно";
+            int one = 0;
+            int two = 0;
+            int three = 0;
+            for (int i = 1; i < dataGridView10.Rows[0].Cells.Count; i++)
+            {
+                if (one < 9)
+                {
+                    dataGridView10.Rows[0].Cells[i].Value = "Junior";
+                    one++;
+                    continue;
+                }
+                if (two < 9)
+                {
+                    dataGridView10.Rows[0].Cells[i].Value = "Middle";
+                    two++;
+                    continue;
+                }
+                if (three < 9)
+                {
+                    dataGridView10.Rows[0].Cells[i].Value = "Senior";
+                    three++;
+                    continue;
+                }
+                else
+                {
+                    one = 0;
+                    two = 0;
+                    three = 0;
+                    i--;
+                }
+            }
+            one = 0;
+            two = 0;
+            three = 0;
+            for (int i = 1; i < dataGridView10.Rows[0].Cells.Count; i++)
+            {  
+                if (one < 3)
+                {
+                    dataGridView10.Rows[1].Cells[i].Value = "Мало";
+                    one++;
+                    continue;
+                }
+                if (two < 3)
+                {
+                    dataGridView10.Rows[1].Cells[i].Value = "Средне";
+                    two++;
+                    continue;
+                }
+                if (three < 3)
+                {
+                    dataGridView10.Rows[1].Cells[i].Value = "Много";
+                    three++;
+                    continue;
+                }
+                else
+                {
+                    one = 0;
+                    two = 0;
+                    three = 0;
+                    i--;
+                }
+            }
+            one = 0;
+            two = 0;
+            three = 0;
+            for (int i = 1; i < dataGridView10.Rows[0].Cells.Count; i++)
+            {
+                if (one < 1)
+                {
+                    dataGridView10.Rows[2].Cells[i].Value = "Низкая";
+                    one++;
+                    continue;
+                }
+                if (two < 1)
+                {
+                    dataGridView10.Rows[2].Cells[i].Value = "Средняя";
+                    two++;
+                    continue;
+                }
+                if (three < 1)
+                {
+                    dataGridView10.Rows[2].Cells[i].Value = "Высокая";
+                    three++;
+                    continue;
+                }
+                else
+                {
+                    one = 0;
+                    two = 0;
+                    three = 0;
+                    i--;
+                }
+            }
+            for (int i = 1; i < dataGridView10.Rows[0].Cells.Count; i++)
+            {
+                for (int k = 3; k < dataGridView10.Rows.Count; k++)
+                {
+                    dataGridView10.Rows[k].Cells[i].Value = "0.3333";
+                }
+            }
         }
         
         private void exampleUpdateNodes()
@@ -239,46 +339,339 @@ namespace TicketSystem
             testcalc(model);
             int zp = 0;
             int tasks = 0;
+            int students = 0;
+            int prof = 0;
+            int stepTasks = 0;
+            int freeTime = 0;
             for (int i = 0; i < model.getNodes().Length; i++)
             {
-                if (model.getNodes()[i].getName().Equals("Salary"))
+                if (model.getNodes()[i].getId() == 37)
                 {
                     zp = i;
                 }
-                if (model.getNodes()[i].getName().Equals("Degree of workload tasks"))
+                if (model.getNodes()[i].getId() == 1)
                 {
                     tasks = i;
                 }
+                if (model.getNodes()[i].getId() == 13)
+                {
+                    students = i;
+                }
+                if (model.getNodes()[i].getId() == 21)
+                {
+                    prof = i;
+                }
+                if (model.getNodes()[i].getId() == 9)
+                {
+                    stepTasks = i;
+                }
+                if (model.getNodes()[i].getId() == 5)
+                {
+                    freeTime = i;
+                }
             }
-            model.getNodes()[zp].Items[0].Value = 0;
-            model.getNodes()[zp].Items[1].Value = 1;
-            model.getNodes()[zp].Items[2].Value = 0;
-            model.getNodes()[tasks].Items[0].Value = 0;
-            model.getNodes()[tasks].Items[1].Value = 1;
-            model.getNodes()[tasks].Items[2].Value = 0;
-
-            for (int i = 0; i < model.getConnects().Length; i++)
+            if(radioButton1.Checked)
             {
-                if (model.getConnects()[i].getFrom().getId() == model.getNodes()[zp].getId())
-                {
-                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
-                }
-                if (model.getConnects()[i].getTo().getId() == model.getNodes()[zp].getId())
-                {
-                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
-                }
-                if (model.getConnects()[i].getFrom().getId() == model.getNodes()[tasks].getId())
-                {
-                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
-                }
-                if (model.getConnects()[i].getTo().getId() == model.getNodes()[tasks].getId())
-                {
-                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
-                }
+                model.getNodes()[zp].Items[0].Value = 1;
+                model.getNodes()[zp].Items[1].Value = 0;
+                model.getNodes()[zp].Items[2].Value = 0;
+                updateConnects(zp, model);
+            }
+            if (radioButton2.Checked)
+            {
+                model.getNodes()[zp].Items[0].Value = 0;
+                model.getNodes()[zp].Items[1].Value = 1;
+                model.getNodes()[zp].Items[2].Value = 0;
+                updateConnects(zp, model);
+            }
+            if (radioButton3.Checked)
+            {
+                model.getNodes()[zp].Items[0].Value = 0;
+                model.getNodes()[zp].Items[1].Value = 0;
+                model.getNodes()[zp].Items[2].Value = 1;
+                updateConnects(zp, model);
+            }
+            if (radioButton5.Checked)
+            {
+                model.getNodes()[tasks].Items[0].Value = 1;
+                model.getNodes()[tasks].Items[1].Value = 0;
+                model.getNodes()[tasks].Items[2].Value = 0;
+                updateConnects(tasks, model);
+            }
+            if (radioButton6.Checked)
+            {
+                model.getNodes()[tasks].Items[0].Value = 0;
+                model.getNodes()[tasks].Items[1].Value = 1;
+                model.getNodes()[tasks].Items[2].Value = 0;
+                updateConnects(tasks, model);
+            }
+            if (radioButton7.Checked)
+            {
+                model.getNodes()[tasks].Items[0].Value = 0;
+                model.getNodes()[tasks].Items[1].Value = 0;
+                model.getNodes()[tasks].Items[2].Value = 1;
+                updateConnects(tasks, model);
+            }
+            if (radioButton4.Checked)
+            {
+                model.getNodes()[students].Items[0].Value = 1;
+                model.getNodes()[students].Items[1].Value = 0;
+                model.getNodes()[students].Items[2].Value = 0;
+                updateConnects(students, model);
+            }
+            if (radioButton8.Checked)
+            {
+                model.getNodes()[students].Items[0].Value = 0;
+                model.getNodes()[students].Items[1].Value = 1;
+                model.getNodes()[students].Items[2].Value = 0;
+                updateConnects(students, model);
+            }
+            if (radioButton9.Checked)
+            {
+                model.getNodes()[students].Items[0].Value = 0;
+                model.getNodes()[students].Items[1].Value = 0;
+                model.getNodes()[students].Items[2].Value = 1;
+                updateConnects(students, model);
+            }
+            if (radioButton10.Checked & !err())
+            {
+                model.getNodes()[prof].Items[0].Value = 1;
+                model.getNodes()[prof].Items[1].Value = 0;
+                model.getNodes()[prof].Items[2].Value = 0;
+                updateConnects(prof, model);
+            }
+            if (radioButton11.Checked & !err())
+            {
+                model.getNodes()[prof].Items[0].Value = 0;
+                model.getNodes()[prof].Items[1].Value = 1;
+                model.getNodes()[prof].Items[2].Value = 0;
+                updateConnects(prof, model);
+            }
+            if (radioButton12.Checked & !err())
+            {
+                model.getNodes()[prof].Items[0].Value = 0;
+                model.getNodes()[prof].Items[1].Value = 0;
+                model.getNodes()[prof].Items[2].Value = 1;
+                updateConnects(prof, model);
+            }
+            if (radioButton13.Checked)
+            {
+                model.getNodes()[stepTasks].Items[0].Value = 1;
+                model.getNodes()[stepTasks].Items[1].Value = 0;
+                model.getNodes()[stepTasks].Items[2].Value = 0;
+                updateConnects(stepTasks, model);
+            }
+            if (radioButton14.Checked)
+            {
+                model.getNodes()[stepTasks].Items[0].Value = 0;
+                model.getNodes()[stepTasks].Items[1].Value = 1;
+                model.getNodes()[stepTasks].Items[2].Value = 0;
+                updateConnects(stepTasks, model);
+            }
+            if (radioButton15.Checked)
+            {
+                model.getNodes()[stepTasks].Items[0].Value = 0;
+                model.getNodes()[stepTasks].Items[1].Value = 0;
+                model.getNodes()[stepTasks].Items[2].Value = 1;
+                updateConnects(stepTasks, model);
+            }
+            if (radioButton16.Checked)
+            {
+                model.getNodes()[freeTime].Items[0].Value = 1;
+                model.getNodes()[freeTime].Items[1].Value = 0;
+                model.getNodes()[freeTime].Items[2].Value = 0;
+                updateConnects(freeTime, model);
+            }
+            if (radioButton17.Checked)
+            {
+                model.getNodes()[freeTime].Items[0].Value = 0;
+                model.getNodes()[freeTime].Items[1].Value = 1;
+                model.getNodes()[freeTime].Items[2].Value = 0;
+                updateConnects(freeTime, model);
+            }
+            if (radioButton18.Checked)
+            {
+                model.getNodes()[freeTime].Items[0].Value = 0;
+                model.getNodes()[freeTime].Items[1].Value = 0;
+                model.getNodes()[freeTime].Items[2].Value = 1;
+                updateConnects(freeTime, model);
             }
             model.updateNodes();
+            printResults(model);
         }
         
+        private void printResults(Model model)
+        {
+            int zp = 0;
+            int tasks = 0;
+            int students = 0;
+            int prof = 0;
+            int stepTasks = 0;
+            int freeTime = 0;
+            int fatigue = 0;
+            int motiv = 0;
+            int able = 0;
+            int eff = 0;
+            for (int i = 0; i < model.getNodes().Length; i++)
+            {
+                if (model.getNodes()[i].getId() == 37)
+                {
+                    zp = i;
+                }
+                if (model.getNodes()[i].getId() == 1)
+                {
+                    tasks = i;
+                }
+                if (model.getNodes()[i].getId() == 13)
+                {
+                    students = i;
+                }
+                if (model.getNodes()[i].getId() == 21)
+                {
+                    prof = i;
+                }
+                if (model.getNodes()[i].getId() == 9)
+                {
+                    stepTasks = i;
+                }
+                if (model.getNodes()[i].getId() == 5)
+                {
+                    freeTime = i;
+                }
+                if (model.getNodes()[i].getId() == 17)
+                {
+                    fatigue = i;
+                }
+                if (model.getNodes()[i].getId() == 29)
+                {
+                    motiv = i;
+                }
+                if (model.getNodes()[i].getId() == 33)
+                {
+                    able = i;
+                }
+                if (model.getNodes()[i].getId() == 25)
+                {
+                    eff = i;
+                }
+            }
+
+
+
+            label7.Text = model.getNodes()[zp].Items[0].Value.ToString();
+            label8.Text = model.getNodes()[zp].Items[1].Value.ToString();
+            label9.Text = model.getNodes()[zp].Items[2].Value.ToString();
+
+            label12.Text = model.getNodes()[tasks].Items[0].Value.ToString();
+            label11.Text = model.getNodes()[tasks].Items[1].Value.ToString();
+            label10.Text = model.getNodes()[tasks].Items[2].Value.ToString();
+
+            label18.Text = model.getNodes()[students].Items[0].Value.ToString();
+            label17.Text = model.getNodes()[students].Items[1].Value.ToString();
+            label16.Text = model.getNodes()[students].Items[2].Value.ToString();
+
+            label30.Text = model.getNodes()[stepTasks].Items[0].Value.ToString();
+            label29.Text = model.getNodes()[stepTasks].Items[1].Value.ToString();
+            label28.Text = model.getNodes()[stepTasks].Items[2].Value.ToString();
+
+            label36.Text = model.getNodes()[freeTime].Items[0].Value.ToString();
+            label35.Text = model.getNodes()[freeTime].Items[1].Value.ToString();
+            label34.Text = model.getNodes()[freeTime].Items[2].Value.ToString();
+
+            label42.Text = model.getNodes()[prof].Items[0].Value.ToString();
+            label41.Text = model.getNodes()[prof].Items[1].Value.ToString();
+            label40.Text = model.getNodes()[prof].Items[2].Value.ToString();
+
+            label24.Text = model.getNodes()[fatigue].Items[0].Value.ToString();
+            label23.Text = model.getNodes()[fatigue].Items[1].Value.ToString();
+            label22.Text = model.getNodes()[fatigue].Items[2].Value.ToString();
+
+            label24.Text = model.getNodes()[fatigue].Items[0].Value.ToString();
+            label23.Text = model.getNodes()[fatigue].Items[1].Value.ToString();
+            label22.Text = model.getNodes()[fatigue].Items[2].Value.ToString();
+
+            label48.Text = model.getNodes()[motiv].Items[0].Value.ToString();
+            label47.Text = model.getNodes()[motiv].Items[1].Value.ToString();
+            label46.Text = model.getNodes()[motiv].Items[2].Value.ToString();
+
+            label54.Text = model.getNodes()[able].Items[0].Value.ToString();
+            label53.Text = model.getNodes()[able].Items[1].Value.ToString();
+            label52.Text = model.getNodes()[able].Items[2].Value.ToString();
+
+            label71.Text = model.getNodes()[eff].Items[0].Value.ToString();
+            label70.Text = model.getNodes()[eff].Items[1].Value.ToString();
+            label69.Text = model.getNodes()[eff].Items[2].Value.ToString();
+
+            label1.Text = model.getNodes()[eff].Items[0].Value.ToString();
+            label3.Text = model.getNodes()[eff].Items[1].Value.ToString();
+            label2.Text = model.getNodes()[eff].Items[2].Value.ToString();
+            try
+            {
+                int prg1 = (int)Math.Round(model.getNodes()[eff].Items[0].Value * 100);
+                int prg3 = (int)Math.Round(model.getNodes()[eff].Items[1].Value * 100);
+                int prg2 = (int)Math.Round(model.getNodes()[eff].Items[2].Value * 100);
+                progressBar1.Value = prg1;
+                progressBar3.Value = prg3;
+                progressBar2.Value = prg2;
+            }
+            catch(Exception ex)
+            {
+
+            }
+            model.load();
+
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
+            radioButton6.Checked = false;
+            radioButton7.Checked = false;
+            radioButton8.Checked = false;
+            radioButton9.Checked = false;
+            radioButton10.Checked = false;
+            radioButton11.Checked = false;
+            radioButton12.Checked = false;
+            radioButton13.Checked = false;
+            radioButton14.Checked = false;
+            radioButton15.Checked = false;
+            radioButton16.Checked = false;
+            radioButton17.Checked = false;
+            radioButton18.Checked = false;
+        }
+
+        private bool err()
+        {
+            if(radioButton1.Checked)
+            {
+                return true;
+            }
+            if (radioButton2.Checked)
+            {
+                return true;
+            }
+            if (radioButton3.Checked)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void updateConnects(int node, Model model)
+        {
+            for (int i = 0; i < model.getConnects().Length; i++)
+            {
+                if (model.getConnects()[i].getFrom().getId() == model.getNodes()[node].getId())
+                {
+                    model.getConnects()[i].getTo().Status = ConnectorStatusFabric.haveUpdate;
+                }
+                if (model.getConnects()[i].getTo().getId() == model.getNodes()[node].getId())
+                {
+                    model.getConnects()[i].getFrom().Status = ConnectorStatusFabric.haveUpdate;
+                }
+            }
+        }
+
         private void a()
         {
             TextFilesDataLoader loader = new TextFilesDataLoader();

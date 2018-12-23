@@ -543,7 +543,7 @@ namespace TicketSystem.TSystem
             return true;
         }
         
-        private void load()
+        public void load()
         {
             int[] nodeIds = NodeIdsStore.getNodeIds();
 
