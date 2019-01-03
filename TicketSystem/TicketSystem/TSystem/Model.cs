@@ -50,6 +50,8 @@ namespace TicketSystem.TSystem
                 }
                 catch(ParentNodeMustBeCalcFirst ex)
                 {
+                    otl("Для этого узла нельзя произвести расчет, пока не "+
+                        "рассчитаны более приоритетные узлы. Необходимо перейти к следующему узлу.");
                     recalcNodes.Add(recalcNodes.ElementAt(i));
                     for (int m = 0; m < nodes[recalcNodes.ElementAt(i)].Items.Length; m++)
                     {
@@ -89,21 +91,33 @@ namespace TicketSystem.TSystem
 
         private void calcNodeItems(int nodeIndex)
         {
-            if(nodeIndex==5)
-            {
-                int fsdfsfsf = 0;
-            }
+            otl("Расчет апостериорных вероятностей для узла " +
+                nodes[nodeIndex].getName() + ":");
+            otl("Расчет полной вероятности так как данный узел зависит от другого узла (он следствие какой-то причины)"+
+                " или данный узел лист.");
             for (int m = 0; m < nodes[nodeIndex].Items.Length; m++)
             {
                 int itemId = nodes[nodeIndex].Items[m].getId();
                 double value = 0;
+                string sum = "";
+                otl("Расчет слагаемых для полной вероятности:");
                 for (int k = 0; k < probabilitys.Count; k++)
                 {
                     if (probabilitys.ElementAt(k).CurrentItemId == itemId)
                     {
-                        value += getMultiplyValue(k);
+                        double newVal = getMultiplyValue(k);
+                        value += newVal;
+                        if (!sum.Equals(""))
+                        {
+                            sum += " + " + newVal.ToString();
+                        }
+                        else
+                        {
+                            sum += newVal.ToString();
+                        }
                     }
                 }
+                otl("Полная вероятность для "+nodes[nodeIndex].Items[m].Name+":"+ sum+" = "+value);
                 nodes[nodeIndex].Items[m].Value = value;
             }
         }
@@ -181,6 +195,10 @@ namespace TicketSystem.TSystem
                 {
                     int probabilityIndex = getProbabilitysWithUnswerIndex(
                         nodes[nodeIndex].Items[i].getId());
+                    otl(nodes[nodeIndex].Items[i].Name+ ": "+"("+ nodes[nodeIndex].Items[i].Value.ToString()+
+                        " * "+ probabilitys[probabilityIndex].Value.ToString()+ ")/"+
+                        sumOfMProbabality+" = " + (nodes[nodeIndex].Items[i].Value * 
+                        probabilitys[probabilityIndex].Value) / sumOfMProbabality);
                     nodes[nodeIndex].Items[i].Value =
                        (nodes[nodeIndex].Items[i].Value * probabilitys[probabilityIndex].Value)/
                        sumOfMProbabality;
@@ -191,12 +209,26 @@ namespace TicketSystem.TSystem
         private double sumOfMultiplyesOfCauseProbability(int nodeIndex)
         {
             double unswer = 0;
+            otl("Расчет апостериорных вероятностей по формуле Байеса (для узла " + 
+                nodes[nodeIndex].getName() + "):");
+            string sum = "";
             for (int i = 0; i < nodes[nodeIndex].Items.Length; i++)
             {
                 int probabilityIndex = getProbabilitysWithUnswerIndex(
                         nodes[nodeIndex].Items[i].getId());
+                if(!sum.Equals(""))
+                {
+                    sum += " + "+nodes[nodeIndex].Items[i].Value.ToString() +" * "+
+                        probabilitys[probabilityIndex].Value.ToString();
+                }
+                else
+                {
+                    sum +=nodes[nodeIndex].Items[i].Value.ToString() + " * " +
+                        probabilitys[probabilityIndex].Value.ToString();
+                }
                 unswer += nodes[nodeIndex].Items[i].Value * probabilitys[probabilityIndex].Value;
             }
+            otl(sum + " = " + unswer);
             return unswer;
         }
 
@@ -576,18 +608,21 @@ namespace TicketSystem.TSystem
         {
             Probability current = probabilitys.ElementAt(probabilityIndex);
             double result = current.Value;
+            string mult = result.ToString();
             for (int i = 0; i < current.Items.Length; i++)
             {
                 for (int k = 0; k < nodes.Length; k++)
                 {
                     if(nodes[k].getItemValue(current.Items[i])!=-1)
                     {
+                        mult += " * "+ nodes[k].getItemValue(current.Items[i]).ToString();
                         result = result * nodes[k].getItemValue(current.Items[i]);
                         break;
                     }
                 }
             }
 
+            otl(mult+" = "+result.ToString());
             return result;
         }
 

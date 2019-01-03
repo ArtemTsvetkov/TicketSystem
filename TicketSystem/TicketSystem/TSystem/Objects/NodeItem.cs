@@ -21,6 +21,19 @@ namespace TicketSystem.TSystem.Objects
             load();
         }
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
         public double Value
         {
             get
@@ -60,7 +73,7 @@ namespace TicketSystem.TSystem.Objects
 
         private void load()
         {
-            name = DataSetConverter.fromDsToSingle.toString.convert(
+            Name = DataSetConverter.fromDsToSingle.toString.convert(
                 SqlLiteSimpleExecute.execute(QueryConfigurator.getNodeItemName(id)));
         }
     }
